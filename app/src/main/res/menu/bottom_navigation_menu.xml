@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/timeline"
+        android:icon="@android:drawable/ic_menu_today"
+        android:title="timeline" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="search" />
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@android:drawable/btn_star"
+        android:title="favorite" />
+
+    <item
+        android:id="@+id/other"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="other" />
+</menu>

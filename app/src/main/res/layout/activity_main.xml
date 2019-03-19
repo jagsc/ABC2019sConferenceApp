@@ -6,19 +6,24 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/timelineRecyclerview"
-        android:layout_width="match_parent"
+    <FrameLayout
+        android:id="@+id/setFragmentLayout"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/navigation"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/timeline_item" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        app:itemTextColor="@drawable/bottom_navigation_item_state"
+        app:itemIconTint="@drawable/bottom_navigation_item_state"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@xml/item_button_navigation" />
+        app:menu="@menu/bottom_navigation_menu" />
 </android.support.constraint.ConstraintLayout>
