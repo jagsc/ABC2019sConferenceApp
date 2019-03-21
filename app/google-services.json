@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "722930428472",
+    "firebase_url": "https://abc2019sconferenceapp-12bae.firebaseio.com",
+    "project_id": "abc2019sconferenceapp-12bae",
+    "storage_bucket": "abc2019sconferenceapp-12bae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722930428472:android:0e4eba353e894bd9",
+        "android_client_info": {
+          "package_name": "com.example.abc2019sconferenceapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722930428472-vlhsgrkv8vh7mg835nmrgq1danpcoaof.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abc2019sconferenceapp",
+            "certificate_hash": "0fb20618bb4fab943a7e9f11a8ec6aa2926f52d7"
+          }
+        },
+        {
+          "client_id": "722930428472-9814tqrqf9o212ddfqvud3lodhb02dlt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5YwWy7bcV8sFT38AZNkqcODXjTUrpCug"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722930428472-9814tqrqf9o212ddfqvud3lodhb02dlt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
