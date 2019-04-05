@@ -22,11 +22,11 @@ import java.util.List;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
     private List<TimelineDataBean> dataBeans;
-    private Fragment fragment;
+    private Context context;
 
-    public TimelineAdapter(List<TimelineDataBean> dataBeans, Fragment fragment) {
+    public TimelineAdapter(List<TimelineDataBean> dataBeans, Context context) {
         this.dataBeans = dataBeans;
-        this.fragment = fragment;
+        this.context = context;
     }
 
     @NonNull
@@ -38,7 +38,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
 
     @Override
     public void onBindViewHolder(@NonNull final TimelineRecyclerViewHolder viewHolder, int i) {
-        viewHolder.name.setText(dataBeans.get(i).getName());
+//        viewHolder.name.setText(dataBeans.get(i).getName());
         viewHolder.time.setText(dataBeans.get(i).getTime());
         viewHolder.title.setText(dataBeans.get(i).getTitle());
         viewHolder.place.setText(dataBeans.get(i).getPlace());
