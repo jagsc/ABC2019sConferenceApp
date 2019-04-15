@@ -12,30 +12,42 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import com.example.abc2019sconferenceapp.R;
 
 public class SearchFragment extends Fragment {
+    String keyWard = "";
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        // 先ほどのレイアウトをここでViewとして作成します
-        return inflater.inflate(R.layout.fragment_search, container, false);
+        View v = inflater.inflate(R.layout.fragment_search, container, false);
+
+        final EditText searchText = v.findViewById(R.id.searchBar);
+        Button searchButton = v.findViewById(R.id.searchButton);
+
+        searchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getFragmentManager();
+                keyWard = searchText.getText().toString();
+                if (fragmentManager != null && !keyWard.equals("")) {
+                    Bundle bundle = new Bundle();
+                    bundle.putString("key", keyWard);
+                    SearchResultFragment searchResultFragment = new SearchResultFragment();
+                    searchResultFragment.setArguments(bundle);
+                    fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, searchResultFragment).commit();
+                }
+            }
+        });
+        return v;
     }
 
     @Override
     public void onStart() {
         super.onStart();
-
-        Button searchButton = getActivity().findViewById(R.id.searchButton);
-        searchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new SearchResultFragment()).commit();
-            }
-        });
     }
 
     @Override

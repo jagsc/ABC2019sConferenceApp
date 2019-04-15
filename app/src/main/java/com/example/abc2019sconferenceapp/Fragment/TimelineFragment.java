@@ -1,6 +1,8 @@
 package com.example.abc2019sconferenceapp.Fragment;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -25,7 +27,7 @@ import java.util.List;
 public class TimelineFragment extends Fragment {
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
         // 先ほどのレイアウトをここでViewとして作成します
         final View v = inflater.inflate(R.layout.fragment_timeline, container, false);
@@ -45,28 +47,30 @@ public class TimelineFragment extends Fragment {
 
                 //非同期が終わった後にここの処理が実行される
                 RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
-                TimelineAdapter timelineAdapter = new TimelineAdapter(dataBeans, v.getContext());
+
+                //TODO テスト用データから本場用データに切り替える
+//                TimelineAdapter timelineAdapter = new TimelineAdapter(dataBeans, v.getContext());
+                TimelineAdapter timelineAdapter = new TimelineAdapter(createTmpDataset(), getFragmentManager());
+
                 LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
                 timelineRecyclerView.setLayoutManager(layoutManager);
                 timelineRecyclerView.setAdapter(timelineAdapter);
                 Log.d("TAG","非同期処理が終了しました。");
             }
         });
-        httpResponse.execute();//非同期処理を実行
+        httpResponse.execute(AsyncTask.SERIAL_EXECUTOR);//非同期処理を実行
         return v;
     }
 
     //検証用のダミーデータ作成
     public List<TimelineDataBean> createTmpDataset() {
         List<TimelineDataBean> dataBeans = new ArrayList<>();
-
         for(int i = 0; i < 30; i++) {
             TimelineDataBean timelineDataBean = new TimelineDataBean();
-//            timelineDataBean.setName("name" + String.valueOf(i));
-            timelineDataBean.setTitle("title" + String.valueOf(i));
-            timelineDataBean.setTime("time" + String.valueOf(i));
-            timelineDataBean.setPlace("Place" + String.valueOf(i));
-
+            timelineDataBean.setItemID(String.valueOf(i));
+            timelineDataBean.setPlace("場所"+ String.valueOf(i));
+            timelineDataBean.setTime("11:0" + String.valueOf(i));
+            timelineDataBean.setTitle("タイトル"+ String.valueOf(i));
             dataBeans.add(timelineDataBean);
         }
         return dataBeans;

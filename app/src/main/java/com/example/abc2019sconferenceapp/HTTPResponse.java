@@ -25,7 +25,7 @@ public class HTTPResponse extends AsyncTask {
 
     @Override
     protected Object doInBackground(Object[] objects) {
-        String url = "";//TODO ここのIDを変更する
+        String url = "http://www.ekidata.jp/api/p/23.json";//TODO ここのIDを変更する
         OkHttpClient client = new OkHttpClient();
         final Request request = new Request.Builder().url(url).build();
         String json = "";

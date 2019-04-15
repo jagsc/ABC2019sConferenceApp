@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.example.abc2019sconferenceapp.Fragment.DetailFragment;
 import com.example.abc2019sconferenceapp.Fragment.SearchResultFragment;
 import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
 import com.example.abc2019sconferenceapp.R;
@@ -22,11 +23,11 @@ import java.util.List;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
     private List<TimelineDataBean> dataBeans;
-    private Context context;
+    private FragmentManager fragmentManager;
 
-    public TimelineAdapter(List<TimelineDataBean> dataBeans, Context context) {
+    public TimelineAdapter(List<TimelineDataBean> dataBeans, FragmentManager fragmentManager) {
         this.dataBeans = dataBeans;
-        this.context = context;
+        this.fragmentManager = fragmentManager;
     }
 
     @NonNull
@@ -38,23 +39,21 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
 
     @Override
     public void onBindViewHolder(@NonNull final TimelineRecyclerViewHolder viewHolder, int i) {
-//        viewHolder.name.setText(dataBeans.get(i).getName());
         viewHolder.time.setText(dataBeans.get(i).getTime());
         viewHolder.title.setText(dataBeans.get(i).getTitle());
         viewHolder.place.setText(dataBeans.get(i).getPlace());
-//        viewHolder.timelineCell.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                FragmentManager fragmentManager = fragment.getFragmentManager();
-//                if(fragmentManager != null) {
-//                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-//                    // BackStackを設定
-//                    fragmentTransaction.addToBackStack(null);
-//                    fragmentTransaction.replace(R.id.container, new SearchResultFragment());
-//                    fragmentTransaction.commit();
-//                }
-//            }
-//        });
+        viewHolder.timelineCell.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(fragmentManager != null) {
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    // BackStackを設定
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.replace(R.id.setFragmentLayout, new DetailFragment());
+                    fragmentTransaction.commit();
+                }
+            }
+        });
     }
 
     @Override
