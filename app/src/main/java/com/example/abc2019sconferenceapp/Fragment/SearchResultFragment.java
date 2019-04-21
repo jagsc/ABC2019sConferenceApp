@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.abc2019sconferenceapp.Adapter.TimelineAdapter;
+import com.example.abc2019sconferenceapp.MainActivity;
 import com.example.abc2019sconferenceapp.R;
 import com.example.abc2019sconferenceapp.TimelineDataBean;
 
@@ -29,34 +30,26 @@ public class SearchResultFragment extends Fragment {
         if (bundle != null) {
             keyWard = bundle.getString("key");
         }
-        //TODO keywardを使ってデータをフィルタリングする
 
-        RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
-
-        //TODO テスト用データから本場用データに切り替える
-//                TimelineAdapter timelineAdapter = new TimelineAdapter(dataBeans, v.getContext());
-        TimelineAdapter timelineAdapter = new TimelineAdapter(createTmpDataset(), getFragmentManager());
-
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-        timelineRecyclerView.setLayoutManager(layoutManager);
-        timelineRecyclerView.setAdapter(timelineAdapter);
-
-        return v;
-    }
-
-    //検証用のダミーデータ作成
-    public List<TimelineDataBean> createTmpDataset() {
-        List<TimelineDataBean> dataBeans = new ArrayList<>();
-        for(int i = 0; i < 30; i++) {
-            if (i % 2 == 0) {
-                TimelineDataBean timelineDataBean = new TimelineDataBean();
-                timelineDataBean.setItemID(String.valueOf(i));
-                timelineDataBean.setPlace("場所" + String.valueOf(i));
-                timelineDataBean.setTime("11:0" + String.valueOf(i));
-                timelineDataBean.setTitle("タイトル" + String.valueOf(i));
-                dataBeans.add(timelineDataBean);
+        if (MainActivity.timelineData != null) {
+            TimelineDataBean tmpTimelineDataBean = new TimelineDataBean();
+            List<TimelineDataBean.TimelineData> tmpTimelinedata = new ArrayList<>();
+            for (int i = 0; i < MainActivity.timelineData.getData().size(); i++) {
+                TimelineDataBean.TimelineData timelineData = MainActivity.timelineData.getData().get(i);
+                if (timelineData != null && timelineData.getTags().contains(keyWard) || timelineData.getTitle().contains(keyWard) || timelineData.getBody().contains(keyWard)) {
+                    tmpTimelinedata.add(timelineData);
+                }
             }
+            tmpTimelineDataBean.setData(tmpTimelinedata);
+
+            RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
+
+            TimelineAdapter timelineAdapter = new TimelineAdapter(tmpTimelineDataBean, getFragmentManager(), this);
+
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+            timelineRecyclerView.setLayoutManager(layoutManager);
+            timelineRecyclerView.setAdapter(timelineAdapter);
         }
-        return dataBeans;
+        return v;
     }
 }

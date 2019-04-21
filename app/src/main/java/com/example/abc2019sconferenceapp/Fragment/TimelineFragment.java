@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 
 import com.example.abc2019sconferenceapp.Adapter.TimelineAdapter;
 import com.example.abc2019sconferenceapp.HTTPResponse;
+import com.example.abc2019sconferenceapp.MainActivity;
 import com.example.abc2019sconferenceapp.R;
 import com.example.abc2019sconferenceapp.TimelineDataBean;
 import com.google.gson.Gson;
@@ -32,47 +33,14 @@ public class TimelineFragment extends Fragment {
         // 先ほどのレイアウトをここでViewとして作成します
         final View v = inflater.inflate(R.layout.fragment_timeline, container, false);
 
-        HTTPResponse httpResponse = new HTTPResponse();
-        httpResponse.setOnCallBack(new HTTPResponse.CallBackTask() {
-            @Override
-            public void Callback(Object o) {
-                //TODO GsonでTimelineBeanにいい感じにデータを代入する
-//                Gson gson = new Gson();
-//                TimelineDataBean timelineDataBean = gson.fromJson((String)o, TimelineDataBean.class);
-//                timelineDataBean.getBelongs();
+        if (MainActivity.timelineData != null) {
+            RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
+            TimelineAdapter timelineAdapter = new TimelineAdapter(MainActivity.timelineData, getFragmentManager(), this);
 
-                List<TimelineDataBean> dataBeans = new ArrayList<>();//TimelineDataBeanに代入
-
-
-
-                //非同期が終わった後にここの処理が実行される
-                RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
-
-                //TODO テスト用データから本場用データに切り替える
-//                TimelineAdapter timelineAdapter = new TimelineAdapter(dataBeans, v.getContext());
-                TimelineAdapter timelineAdapter = new TimelineAdapter(createTmpDataset(), getFragmentManager());
-
-                LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
-                timelineRecyclerView.setLayoutManager(layoutManager);
-                timelineRecyclerView.setAdapter(timelineAdapter);
-                Log.d("TAG","非同期処理が終了しました。");
-            }
-        });
-        httpResponse.execute(AsyncTask.SERIAL_EXECUTOR);//非同期処理を実行
-        return v;
-    }
-
-    //検証用のダミーデータ作成
-    public List<TimelineDataBean> createTmpDataset() {
-        List<TimelineDataBean> dataBeans = new ArrayList<>();
-        for(int i = 0; i < 30; i++) {
-            TimelineDataBean timelineDataBean = new TimelineDataBean();
-            timelineDataBean.setItemID(String.valueOf(i));
-            timelineDataBean.setPlace("場所"+ String.valueOf(i));
-            timelineDataBean.setTime("11:0" + String.valueOf(i));
-            timelineDataBean.setTitle("タイトル"+ String.valueOf(i));
-            dataBeans.add(timelineDataBean);
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+            timelineRecyclerView.setLayoutManager(layoutManager);
+            timelineRecyclerView.setAdapter(timelineAdapter);
         }
-        return dataBeans;
+        return v;
     }
 }

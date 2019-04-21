@@ -11,8 +11,11 @@ import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.abc2019sconferenceapp.Fragment.DetailFragment;
 import com.example.abc2019sconferenceapp.Fragment.SearchResultFragment;
 import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
@@ -22,12 +25,14 @@ import com.example.abc2019sconferenceapp.TimelineDataBean;
 import java.util.List;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
-    private List<TimelineDataBean> dataBeans;
+    private TimelineDataBean dataBeans;
     private FragmentManager fragmentManager;
+    private Fragment fragment;
 
-    public TimelineAdapter(List<TimelineDataBean> dataBeans, FragmentManager fragmentManager) {
+    public TimelineAdapter(TimelineDataBean dataBeans, FragmentManager fragmentManager, Fragment fragment) {
         this.dataBeans = dataBeans;
         this.fragmentManager = fragmentManager;
+        this.fragment = fragment;
     }
 
     @NonNull
@@ -39,9 +44,46 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
 
     @Override
     public void onBindViewHolder(@NonNull final TimelineRecyclerViewHolder viewHolder, int i) {
-        viewHolder.time.setText(dataBeans.get(i).getTime());
-        viewHolder.title.setText(dataBeans.get(i).getTitle());
-        viewHolder.place.setText(dataBeans.get(i).getPlace());
+        final TimelineDataBean.TimelineData itemList = dataBeans.getData().get(i);
+        viewHolder.time.setText(itemList.getTime());
+        viewHolder.title.setText(itemList.getTitle());
+        viewHolder.place.setText(itemList.getPlace());
+        Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
+
+        //講演者名を追加
+        String presenterName = "";
+        for (int j = 0; j < itemList.getPresenterNames().size(); j++) {
+            presenterName += itemList.getPresenterNames().get(j).getPresenter() + " ";
+        }
+        viewHolder.name.setText(presenterName);
+
+        //tagをViewごと追加
+        for (int j = 0; j < itemList.getTags().size(); j++) {
+            TextView textView = new TextView(fragment.getContext());
+            textView.setText(itemList.getTags().get(j).getTag());
+
+            viewHolder.tagLayout.addView(textView);
+            textView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(fragmentManager != null) {
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        // BackStackを設定
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.replace(R.id.setFragmentLayout, new DetailFragment());//TODO tagのテキストを保持したままSearchResultに遷移するように変更する
+                        fragmentTransaction.commit();
+                    }
+                }
+            });
+        }
+
+        //ファボボタンをタップしたらTimelineDataBeanのfavoに1をセット
+        viewHolder.favo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                itemList.setFavo("1");//TODO SharedPreferenceにデータを保存して、そこから読み出さないとアプリを終了したら消えてしまうので変更する
+            }
+        });
         viewHolder.timelineCell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,7 +100,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
 
     @Override
     public int getItemCount() {
-        return dataBeans.size();
+        if (dataBeans.getData() != null) {
+            return dataBeans.getData().size();
+        } else {
+            return 0;
+        }
     }
 
     class TimelineRecyclerViewHolder extends RecyclerView.ViewHolder {
@@ -66,6 +112,8 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         TextView title;
         TextView name;
         TextView place;
+        ImageButton favo;
+        LinearLayout tagLayout;
         ConstraintLayout timelineCell;
 
         private TimelineRecyclerViewHolder(View itemView) {
@@ -75,6 +123,8 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             name = itemView.findViewById(R.id.name_text);
             place = itemView.findViewById(R.id.place_text);
             timelineCell = itemView.findViewById(R.id.timelineCell);
+            favo = itemView.findViewById(R.id.favo_button);
+            tagLayout = itemView.findViewById(R.id.tagLayout);
         }
     }
 }
