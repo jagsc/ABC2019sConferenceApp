@@ -1,6 +1,7 @@
 package com.example.abc2019sconferenceapp.Adapter;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
@@ -22,6 +23,7 @@ import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
 import com.example.abc2019sconferenceapp.R;
 import com.example.abc2019sconferenceapp.TimelineDataBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
@@ -48,8 +50,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         viewHolder.time.setText(itemList.getTime());
         viewHolder.title.setText(itemList.getTitle());
         viewHolder.place.setText(itemList.getPlace());
-        Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
-
+        if (itemList.getFavo() != null && itemList.getFavo().equals("1")) {
+            Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
+        } else if (itemList.getFavo() != null && itemList.getFavo().equals("0")) {
+            Glide.with(fragment).load(R.drawable.baseline_star_border_black_36).into(viewHolder.favo);
+        }
         //講演者名を追加
         String presenterName = "";
         for (int j = 0; j < itemList.getPresenterNames().size(); j++) {
@@ -59,19 +64,20 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
 
         //tagをViewごと追加
         for (int j = 0; j < itemList.getTags().size(); j++) {
-            TextView textView = new TextView(fragment.getContext());
-            textView.setText(itemList.getTags().get(j).getTag());
+            final TextView textView = new TextView(fragment.getContext());
+            textView.setText(itemList.getTags().get(j).getTag() + "  ");
 
             viewHolder.tagLayout.addView(textView);
             textView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if(fragmentManager != null) {
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        // BackStackを設定
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.replace(R.id.setFragmentLayout, new DetailFragment());//TODO tagのテキストを保持したままSearchResultに遷移するように変更する
-                        fragmentTransaction.commit();
+                    String keyWard = textView.getText().toString();
+                    if (fragmentManager != null && !keyWard.equals("")) {
+                        Bundle bundle = new Bundle();
+                        bundle.putString("key", keyWard);
+                        SearchResultFragment searchResultFragment = new SearchResultFragment();
+                        searchResultFragment.setArguments(bundle);
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, searchResultFragment).commit();
                     }
                 }
             });
@@ -81,7 +87,15 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         viewHolder.favo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                itemList.setFavo("1");//TODO SharedPreferenceにデータを保存して、そこから読み出さないとアプリを終了したら消えてしまうので変更する
+                if (itemList.getFavo() != null) {
+                    if (itemList.getFavo().equals("0")) {
+                        itemList.setFavo("1");
+                        Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
+                    } else if (itemList.getFavo().equals("1")) {
+                        itemList.setFavo("0");
+                        Glide.with(fragment).load(R.drawable.baseline_star_border_black_36).into(viewHolder.favo);
+                    }
+                }
             }
         });
         viewHolder.timelineCell.setOnClickListener(new View.OnClickListener() {

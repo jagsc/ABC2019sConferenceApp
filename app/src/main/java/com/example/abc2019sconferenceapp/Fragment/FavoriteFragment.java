@@ -17,6 +17,7 @@ import com.example.abc2019sconferenceapp.Adapter.TimelineAdapter;
 import com.example.abc2019sconferenceapp.MainActivity;
 import com.example.abc2019sconferenceapp.R;
 import com.example.abc2019sconferenceapp.TimelineDataBean;
+import com.example.abc2019sconferenceapp.Utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +35,7 @@ public class FavoriteFragment extends Fragment {
             List<TimelineDataBean.TimelineData> tmpTimelinedata = new ArrayList<>();
             for (int i = 0; i < MainActivity.timelineData.getData().size(); i++) {
                 TimelineDataBean.TimelineData timelineData = MainActivity.timelineData.getData().get(i);
-                if (timelineData != null && timelineData.getFavo().equals("1")) {
+                if (timelineData.getFavo() != null && timelineData.getFavo().equals("1")) {
                     tmpTimelinedata.add(timelineData);
                 }
             }
@@ -42,7 +43,6 @@ public class FavoriteFragment extends Fragment {
 
             RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
 
-            //TODO テスト用データから本場用データに切り替える
             TimelineAdapter timelineAdapter = new TimelineAdapter(tmpTimelineDataBean, getFragmentManager(), this);
 
             LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());

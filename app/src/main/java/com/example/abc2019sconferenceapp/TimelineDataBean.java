@@ -5,8 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TimelineDataBean {
-    //TODO どんなAPIになるかわからないので、暫定。API完成後に変える
+    public String version;
     public List<TimelineData> data;
+
+    public String getVersion() {
+        return version;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
 
     public List<TimelineData> getData() {
         return data;
@@ -19,7 +27,6 @@ public class TimelineDataBean {
     public class TimelineData {
         String itemID;
         String favo;
-        String search;
         String title;
         String body;
         List<presenterNames> presenterNames;
@@ -42,14 +49,6 @@ public class TimelineDataBean {
 
         public void setFavo(String favo) {
             this.favo = favo;
-        }
-
-        public String getSearch() {
-            return search;
-        }
-
-        public void setSearch(String search) {
-            this.search = search;
         }
 
         public String getTitle() {

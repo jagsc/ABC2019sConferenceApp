@@ -29,6 +29,9 @@ public class SearchResultFragment extends Fragment {
         Bundle bundle = getArguments();
         if (bundle != null) {
             keyWard = bundle.getString("key");
+            if (keyWard != null) {
+                keyWard = keyWard.trim();
+            }
         }
 
         if (MainActivity.timelineData != null) {
@@ -36,8 +39,25 @@ public class SearchResultFragment extends Fragment {
             List<TimelineDataBean.TimelineData> tmpTimelinedata = new ArrayList<>();
             for (int i = 0; i < MainActivity.timelineData.getData().size(); i++) {
                 TimelineDataBean.TimelineData timelineData = MainActivity.timelineData.getData().get(i);
-                if (timelineData != null && timelineData.getTags().contains(keyWard) || timelineData.getTitle().contains(keyWard) || timelineData.getBody().contains(keyWard)) {
-                    tmpTimelinedata.add(timelineData);
+                //検索用にTimelineDataBeanに入っているテキストをすべて1つ1つallTextに代入していく。
+                List<String> allText = new ArrayList<>();
+                allText.add(timelineData.getTitle());
+                allText.add(timelineData.getBody());
+                allText.add(timelineData.getPlace());
+                allText.add(timelineData.getTime());
+                for (int j = 0; j < timelineData.getPresenterNames().size(); j++) {
+                    allText.add(timelineData.getPresenterNames().get(j).getPresenter());
+                }
+                for (int j = 0; j < timelineData.getBelongs().size(); j ++) {
+                    allText.add(timelineData.getBelongs().get(j).getBelong());
+                }
+                for (int j = 0; j < timelineData.getTags().size(); j++) {
+                    allText.add(timelineData.getTags().get(j).getTag());
+                }
+                for (int j = 0; j < allText.size(); j++) {
+                    if (allText.get(j).contains(keyWard)) {
+                        tmpTimelinedata.add(timelineData);
+                    }
                 }
             }
             tmpTimelineDataBean.setData(tmpTimelinedata);
