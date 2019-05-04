@@ -29,10 +29,13 @@ public class TimelineDataBean {
         String favo;
         String title;
         String body;
+        List<presenterIcons> presenterIcons;
         List<presenterNames> presenterNames;
         List<belongs> belongs;
+        List<slideUrls> slideUrls;
         String place;
         String time;
+        String category;
         List<tags> tags;
 
         public String getItemID() {
@@ -83,6 +86,14 @@ public class TimelineDataBean {
             this.time = time;
         }
 
+        public List<presenterIcons> getPresenterIcons() {
+            return presenterIcons;
+        }
+
+        public void setPresenterIcons(List<presenterIcons> presenterIcons) {
+            this.presenterIcons = presenterIcons;
+        }
+
         public List<TimelineDataBean.presenterNames> getPresenterNames() {
             return presenterNames;
         }
@@ -99,12 +110,52 @@ public class TimelineDataBean {
             this.belongs = belongs;
         }
 
+        public List<slideUrls> getSlideUrls() {
+            return slideUrls;
+        }
+
+        public void setSlideUrls(List<slideUrls> slideUrls) {
+            this.slideUrls = slideUrls;
+        }
+
+        public String getCategory() {
+            return category;
+        }
+
+        public void setCategory(String category) {
+            this.category = category;
+        }
+
         public List<TimelineDataBean.tags> getTags() {
             return tags;
         }
 
         public void setTags(List<TimelineDataBean.tags> tags) {
             this.tags = tags;
+        }
+    }
+
+    public class presenterIcons {
+        String iconUrl;
+
+        public String getIconUrl() {
+            return iconUrl;
+        }
+
+        public void setIconUrl(String iconUrl) {
+            this.iconUrl = iconUrl;
+        }
+    }
+
+    public class slideUrls {
+        String slideurl;
+
+        public String getSlideurl() {
+            return slideurl;
+        }
+
+        public void setSlideurl(String slideurl) {
+            this.slideurl = slideurl;
         }
     }
 
