@@ -7,10 +7,10 @@ import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.example.abc2019sconferenceapp.Fragment.FavoriteFragment;
-import com.example.abc2019sconferenceapp.Fragment.OtherFragment;
-import com.example.abc2019sconferenceapp.Fragment.SearchFragment;
-import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
+import com.example.abc2019sconferenceapp.fragment.FavoriteFragment;
+import com.example.abc2019sconferenceapp.fragment.OtherFragment;
+import com.example.abc2019sconferenceapp.fragment.search.SearchFragment;
+import com.example.abc2019sconferenceapp.fragment.TimelineFragment;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 public class MainActivity extends AppCompatActivity {

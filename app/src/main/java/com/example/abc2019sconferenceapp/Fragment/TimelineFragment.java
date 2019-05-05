@@ -1,4 +1,4 @@
-package com.example.abc2019sconferenceapp.Fragment;
+package com.example.abc2019sconferenceapp.fragment;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
