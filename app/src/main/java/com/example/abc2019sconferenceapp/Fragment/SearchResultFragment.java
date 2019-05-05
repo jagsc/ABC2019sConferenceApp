@@ -57,6 +57,7 @@ public class SearchResultFragment extends Fragment {
                 for (int j = 0; j < allText.size(); j++) {
                     if (allText.get(j).contains(keyWard)) {
                         tmpTimelinedata.add(timelineData);
+                        break;
                     }
                 }
             }
