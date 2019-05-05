@@ -23,9 +23,6 @@ import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
 import com.example.abc2019sconferenceapp.R;
 import com.example.abc2019sconferenceapp.TimelineDataBean;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
     private TimelineDataBean dataBeans;
     private FragmentManager fragmentManager;
@@ -71,19 +68,19 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             textView.setText(itemList.getTags().get(j).getTag() + "  ");
 
             viewHolder.tagLayout.addView(textView);
-            textView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    String keyWard = textView.getText().toString();
-                    if (fragmentManager != null && !keyWard.equals("")) {
-                        Bundle bundle = new Bundle();
-                        bundle.putString("key", keyWard);
-                        SearchResultFragment searchResultFragment = new SearchResultFragment();
-                        searchResultFragment.setArguments(bundle);
-                        fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.setFragmentLayout, searchResultFragment).commit();
-                    }
-                }
-            });
+//            textView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    String keyWard = textView.getText().toString();
+//                    if (fragmentManager != null && !keyWard.equals("")) {
+//                        Bundle bundle = new Bundle();
+//                        bundle.putString("key", keyWard);
+//                        SearchResultFragment searchResultFragment = new SearchResultFragment();
+//                        searchResultFragment.setArguments(bundle);
+//                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, searchResultFragment).commit();
+//                    }
+//                }
+//            });
         }
 
         //ファボボタンをタップしたらTimelineDataBeanのfavoに1をセット

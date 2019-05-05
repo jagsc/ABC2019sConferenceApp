@@ -1,5 +1,6 @@
 package com.example.abc2019sconferenceapp.Fragment;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -11,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -38,7 +40,9 @@ public class SearchFragment extends Fragment {
                     bundle.putString("key", keyWard);
                     SearchResultFragment searchResultFragment = new SearchResultFragment();
                     searchResultFragment.setArguments(bundle);
-                    fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.setFragmentLayout, searchResultFragment).commit();
+                    fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.searchLayout, searchResultFragment).commit();
+                    InputMethodManager inputMethodManager = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                 }
             }
         });
