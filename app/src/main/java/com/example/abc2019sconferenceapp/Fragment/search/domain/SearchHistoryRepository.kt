@@ -4,4 +4,5 @@ import com.example.abc2019sconferenceapp.fragment.search.domain.entity.SearchHis
 
 internal interface SearchHistoryRepository {
   suspend fun addSearchHistory(searchHistoryEntity: SearchHistoryEntity)
+  suspend fun clearSearchHistory()
 }

@@ -2,10 +2,11 @@ package com.example.abc2019sconferenceapp.fragment.search.infra
 
 import android.content.Context
 import androidx.room.Database
+import androidx.room.Entity
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [SearchHistoryDao::class], version = 1)
+@Database(entities = [SearchHistory::class], version = 1)
 internal abstract class SearchHistoryDatabase : RoomDatabase() {
 
   abstract fun searchHistoryDao(): SearchHistoryDao

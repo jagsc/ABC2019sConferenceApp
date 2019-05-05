@@ -9,8 +9,6 @@ import com.example.abc2019sconferenceapp.fragment.search.domain.entity.convert
 internal class SearchHistoryRepositoryImpl(
   private val context: Context
 ) : SearchHistoryRepository, SearchHistoryReadonlyRepository {
-
-
   override suspend fun addSearchHistory(searchHistoryEntity: SearchHistoryEntity) {
     val database = SearchHistoryDatabase.getDatabase(context) ?: throw Exception()
     val dao = database.searchHistoryDao()
@@ -23,5 +21,11 @@ internal class SearchHistoryRepositoryImpl(
     val database = SearchHistoryDatabase.getDatabase(context) ?: throw Exception()
     val dao = database.searchHistoryDao()
     return dao.getAllHistory().convert()
+  }
+
+  override suspend fun clearSearchHistory() {
+    val database = SearchHistoryDatabase.getDatabase(context) ?: throw Exception()
+    val dao = database.searchHistoryDao()
+    dao.deleteAll()
   }
 }
