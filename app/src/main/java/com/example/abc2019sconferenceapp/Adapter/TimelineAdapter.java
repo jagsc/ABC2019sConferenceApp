@@ -112,7 +112,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
                     fragmentTransaction.addToBackStack(null);
                     DetailFragment detailFragment = new DetailFragment();
                     detailFragment.setArguments(bundle);
-                    fragmentTransaction.replace(R.id.setFragmentLayout, detailFragment).commit();
+                    fragmentTransaction.replace(R.id.setFragmentLayout, detailFragment).commitAllowingStateLoss();
                 }
             }
         });

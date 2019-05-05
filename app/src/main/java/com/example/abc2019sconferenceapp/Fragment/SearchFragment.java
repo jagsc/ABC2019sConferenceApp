@@ -40,7 +40,7 @@ public class SearchFragment extends Fragment {
                     bundle.putString("key", keyWard);
                     SearchResultFragment searchResultFragment = new SearchResultFragment();
                     searchResultFragment.setArguments(bundle);
-                    fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.searchLayout, searchResultFragment).commit();
+                    fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.searchLayout, searchResultFragment).commitAllowingStateLoss();
                     InputMethodManager inputMethodManager = (InputMethodManager)getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
                     inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
                 }

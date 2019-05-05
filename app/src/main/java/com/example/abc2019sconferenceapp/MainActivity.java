@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setSelectedListener() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new TimelineFragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new TimelineFragment()).commitAllowingStateLoss();
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -107,16 +107,32 @@ public class MainActivity extends AppCompatActivity {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 switch (menuItem.getItemId()) {
                     case R.id.timeline:
-                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new TimelineFragment()).commit();
+                        int timelineCount = fragmentManager.getBackStackEntryCount();
+                        for (int i = 0; i < timelineCount; i++) {
+                            fragmentManager.popBackStack();
+                        }
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new TimelineFragment()).commitAllowingStateLoss();
                         return true;
                     case R.id.search:
-                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new SearchFragment()).commit();
+                        int searchCount = fragmentManager.getBackStackEntryCount();
+                        for (int i = 0; i < searchCount; i++) {
+                            fragmentManager.popBackStack();
+                        }
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new SearchFragment()).commitAllowingStateLoss();
                         return true;
                     case R.id.favorite:
-                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new FavoriteFragment()).commit();
+                        int favoriteCount = fragmentManager.getBackStackEntryCount();
+                        for (int i = 0; i < favoriteCount; i++) {
+                            fragmentManager.popBackStack();
+                        }
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new FavoriteFragment()).commitAllowingStateLoss();
                         return true;
                     case R.id.other:
-                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new OtherFragment()).commit();
+                        int otherCount = fragmentManager.getBackStackEntryCount();
+                        for (int i = 0; i < otherCount; i++) {
+                            fragmentManager.popBackStack();
+                        }
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new OtherFragment()).commitAllowingStateLoss();
                         return true;
                 }
                 return false;
