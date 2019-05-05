@@ -14,13 +14,24 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/other_title"
-            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
             android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/other_body"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/about_abc"
@@ -30,7 +41,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="ABCとは"
+            android:text="@string/about_abc"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -38,14 +49,14 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/notification"
+            android:id="@+id/blog"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="お知らせ"
+            android:text="@string/blog"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -60,7 +71,7 @@
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="フロアマップ"
+            android:text="@string/map"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -68,14 +79,14 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/survey"
+            android:id="@+id/socialGathering"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="アンケート"
+            android:text="@string/socialGathering"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -83,14 +94,14 @@
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
-            android:id="@+id/sponsor"
+            android:id="@+id/registration"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
             android:onClick="onClick"
-            android:text="スポンサー"
+            android:text="@string/registration"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
@@ -104,7 +115,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="お問い合わせ"
+            android:text="@string/Inquiry"
             android:textAlignment="center"
             android:textColor="@android:color/black"
             android:textSize="30sp"
