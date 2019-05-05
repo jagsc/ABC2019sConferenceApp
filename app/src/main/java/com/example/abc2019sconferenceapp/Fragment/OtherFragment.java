@@ -1,5 +1,7 @@
 package com.example.abc2019sconferenceapp.Fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -69,15 +71,8 @@ public class OtherFragment extends Fragment{
     }
 
     private void sendFragment(String url) {
-        FragmentManager fragmentManager = getFragmentManager();
-        Bundle bundle = new Bundle();
-        bundle.putString("url", url);
-        WebViewFragment webViewFragment = new WebViewFragment();
-        webViewFragment.setArguments(bundle);
-        if (fragmentManager != null) {
-            fragmentManager.beginTransaction().add(R.id.setFragmentLayout, webViewFragment).addToBackStack(null).commit();
-        }
-
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+        startActivity(intent);
     }
-
 }

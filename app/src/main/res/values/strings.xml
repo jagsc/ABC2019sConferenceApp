@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ABC2019sConferenceApp</string>
-    <string name="other_body">【日時】 2019年5月26日(日) 10:00 〜 18:00(予定)\n【参加費】無料\n【会場】東海大学 高輪キャンパス\n【主催】 特定非営利活動法人 日本Androidの会</string>
+    <string name="other_body">【日時】2019年5月26日(日) 10:00 〜 18:00(予定)\n【参加費】無料\n【会場】東海大学 高輪キャンパス\n【主催】特定非営利活動法人 日本Androidの会</string>
     <string name="about_abc">ABCとは</string>
     <string name="blog">ブログ</string>
     <string name="socialGathering">懇親会</string>

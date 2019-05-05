@@ -47,6 +47,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
     @Override
     public void onBindViewHolder(@NonNull final TimelineRecyclerViewHolder viewHolder, int i) {
         final TimelineDataBean.TimelineData itemList = dataBeans.getData().get(i);
+        final int position = i;
         viewHolder.time.setText(itemList.getTime());
         viewHolder.title.setText(itemList.getTitle());
         viewHolder.place.setText(itemList.getPlace());
@@ -102,11 +103,14 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             @Override
             public void onClick(View v) {
                 if(fragmentManager != null) {
+                    Bundle bundle = new Bundle();
+                    bundle.putInt("position", position);
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     // BackStackを設定
                     fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.replace(R.id.setFragmentLayout, new DetailFragment());
-                    fragmentTransaction.commit();
+                    DetailFragment detailFragment = new DetailFragment();
+                    detailFragment.setArguments(bundle);
+                    fragmentTransaction.replace(R.id.setFragmentLayout, detailFragment).commit();
                 }
             }
         });
