@@ -38,7 +38,7 @@ public class SearchFragment extends Fragment {
                     bundle.putString("key", keyWard);
                     SearchResultFragment searchResultFragment = new SearchResultFragment();
                     searchResultFragment.setArguments(bundle);
-                    fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, searchResultFragment).commit();
+                    fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.setFragmentLayout, searchResultFragment).commit();
                 }
             }
         });

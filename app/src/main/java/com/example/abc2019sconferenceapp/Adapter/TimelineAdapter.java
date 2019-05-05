@@ -51,7 +51,9 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         viewHolder.time.setText(itemList.getTime());
         viewHolder.title.setText(itemList.getTitle());
         viewHolder.place.setText(itemList.getPlace());
-        if (itemList.getFavo() != null && itemList.getFavo().equals("1")) {
+        if (itemList.getFavo() == null) {
+            Glide.with(fragment).load(R.drawable.baseline_star_border_black_36).into(viewHolder.favo);
+        } else if (itemList.getFavo() != null && itemList.getFavo().equals("1")) {
             Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
         } else if (itemList.getFavo() != null && itemList.getFavo().equals("0")) {
             Glide.with(fragment).load(R.drawable.baseline_star_border_black_36).into(viewHolder.favo);
@@ -78,7 +80,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
                         bundle.putString("key", keyWard);
                         SearchResultFragment searchResultFragment = new SearchResultFragment();
                         searchResultFragment.setArguments(bundle);
-                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, searchResultFragment).commit();
+                        fragmentManager.beginTransaction().addToBackStack(null).replace(R.id.setFragmentLayout, searchResultFragment).commit();
                     }
                 }
             });
@@ -88,7 +90,10 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         viewHolder.favo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (itemList.getFavo() != null) {
+                if (itemList.getFavo() == null) {
+                    itemList.setFavo("1");
+                    Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
+                } else {
                     if (itemList.getFavo().equals("0")) {
                         itemList.setFavo("1");
                         Glide.with(fragment).load(R.drawable.baseline_star_rate_black_36).into(viewHolder.favo);
