@@ -13,10 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
-        <service
-            android:name=".FirebaseMessaging"
-            android:enabled="true"
-            android:exported="true"></service>
 
         <meta-data
             android:name="com.google.android.actions"
@@ -32,7 +28,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".FirebaseMessaging">
+        <service
+            android:name=".FirebaseMessaging"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
