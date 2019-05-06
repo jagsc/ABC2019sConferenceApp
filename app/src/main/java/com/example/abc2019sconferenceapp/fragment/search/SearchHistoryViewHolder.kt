@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import com.example.abc2019sconferenceapp.databinding.HistoryItemBinding
 
 internal class SearchHistoryViewHolder private constructor(
-  private val binding: HistoryItemBinding
+  private val binding: com.example.abc2019sconferenceapp.databinding.HistoryItemBinding
 ) : androidx.recyclerview.widget.RecyclerView.ViewHolder(binding.root) {
   companion object {
     fun create(
