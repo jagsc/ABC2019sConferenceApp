@@ -1,9 +1,11 @@
 package com.example.abc2019sconferenceapp.fragment.search
 
+import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.inputmethod.InputMethodManager
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -60,17 +62,22 @@ internal class SearchFragment : Fragment() {
         }
       }
 
+      val manager = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+      manager.hideSoftInputFromWindow(view?.windowToken, 0)
+
       requireActivity()
         .supportFragmentManager
         .beginTransaction()
+        .addToBackStack(null)
         .replace(
-          R.id.setFragmentLayout,
+          R.id.searchLayout,
           SearchResultFragment()
         )
-        .commit()
+        .commitAllowingStateLoss()
     }
 
     GlobalScope.launch(Dispatchers.Main) {
+      val context = requireContext()
       try {
         val searchHistory = withContext(Dispatchers.IO) { searchHistoryReadonlyRepository.loadSearchHistry() }.convert()
         val searchHistoryAdapter = SearchHistoryAdapter()
@@ -80,15 +87,16 @@ internal class SearchFragment : Fragment() {
           override fun onClick(searchHistoryBindingItem: SearchHistoryBindingItem) {
             if (searchHistoryBindingItem.queryText.isEmpty()) {
               return
+            } else {
+              binding.textView.searchBar.text.append(searchHistoryBindingItem.queryText)
             }
-            binding.textView.searchBar.text.append(searchHistoryBindingItem.queryText)
           }
         }
 
         binding.searchHistoryRecyclerView.adapter = searchHistoryAdapter
-        binding.searchHistoryRecyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.searchHistoryRecyclerView.layoutManager = LinearLayoutManager(context)
       } catch (e: Exception) {
-        Toast.makeText(requireContext(), "検索履歴の取得に失敗しました", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "検索履歴の取得に失敗しました", Toast.LENGTH_SHORT).show()
       }
     }
 
