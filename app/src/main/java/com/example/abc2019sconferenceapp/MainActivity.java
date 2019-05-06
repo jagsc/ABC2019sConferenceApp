@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.navigation);
 
-        String url = "https://prprhyt.github.io/ABC2019sConferenceApp/time-table.json";
+        String url = "https://jagsc.github.io/ABC2019sConferenceApp/time-table.json";
         //JsonDataを読み込む
         HTTPResponse httpResponse = new HTTPResponse(url);
         httpResponse.setOnCallBack(new HTTPResponse.CallBackTask() {
