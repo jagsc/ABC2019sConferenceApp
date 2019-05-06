@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/timelineRecyclerview"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bazzarRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/timeline_item" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        tools:listitem="@layout/bazzar_item" />
+</android.support.constraint.ConstraintLayout>

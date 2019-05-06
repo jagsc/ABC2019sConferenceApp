@@ -6,7 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.abc2019sconferenceapp.Adapter.TimelineAdapter;
+import com.example.abc2019sconferenceapp.MainActivity;
 import com.example.abc2019sconferenceapp.R;
+import com.example.abc2019sconferenceapp.TimelineDataBean;
+import com.example.abc2019sconferenceapp.Utils;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -15,7 +22,29 @@ public class FavoriteFragment extends Fragment {
     @Override
     public View onCreateView(@NotNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        // 先ほどのレイアウトをここでViewとして作成します
-        return inflater.inflate(R.layout.fragment_timeline, container, false);
+        final View v = inflater.inflate(R.layout.fragment_timeline, container, false);
+
+
+        if (MainActivity.timelineData != null) {
+            TimelineDataBean tmpTimelineDataBean = new TimelineDataBean();
+            List<TimelineDataBean.TimelineData> tmpTimelinedata = new ArrayList<>();
+            for (int i = 0; i < MainActivity.timelineData.getData().size(); i++) {
+                TimelineDataBean.TimelineData timelineData = MainActivity.timelineData.getData().get(i);
+                if (timelineData.getFavo() != null && timelineData.getFavo().equals("1")) {
+                    tmpTimelinedata.add(timelineData);
+                }
+            }
+            tmpTimelineDataBean.setData(tmpTimelinedata);
+
+            RecyclerView timelineRecyclerView = v.findViewById(R.id.timelineRecyclerview);
+
+            TimelineAdapter timelineAdapter = new TimelineAdapter(tmpTimelineDataBean, getFragmentManager(), this);
+
+            LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
+            timelineRecyclerView.setLayoutManager(layoutManager);
+            timelineRecyclerView.setAdapter(timelineAdapter);
+        }
+        return v;
     }
+
 }

@@ -7,9 +7,12 @@
     android:baselineAligned="false">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/timelineCell"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@color/item_bg">
 
         <TextView
             android:id="@+id/place_text"
@@ -18,8 +21,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:textColor="@android:color/black"
-            app:layout_constraintStart_toEndOf="@+id/name_text"
-            app:layout_constraintTop_toBottomOf="@+id/title_text"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/timeText"
+            app:layout_constraintTop_toBottomOf="@+id/name_text"
             tools:text="講演場所" />
 
         <TextView
@@ -29,6 +33,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:textColor="@android:color/black"
+            android:textSize="18sp"
             app:layout_constraintStart_toEndOf="@+id/timeText"
             app:layout_constraintTop_toBottomOf="@+id/title_text"
             tools:text="講演者名" />
@@ -40,6 +45,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:textColor="@android:color/black"
+            android:textSize="30sp"
             app:layout_constraintStart_toEndOf="@+id/timeText"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="講演タイトル\n改行あるバージョン" />
@@ -52,27 +58,32 @@
             android:layout_marginTop="8dp"
             android:layout_weight="1"
             android:textColor="@android:color/black"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="12:00～" />
 
         <ImageButton
             android:id="@+id/favo_button"
-            android:layout_width="42dp"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/timeText"
-            tools:srcCompat="@android:drawable/btn_default_small" />
-
-        <Button
-            android:id="@+id/tag_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
             android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/baseline_star_border_black_36" />
+
+        <LinearLayout
+            android:id="@+id/tagLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/timeText"
             app:layout_constraintTop_toBottomOf="@+id/name_text"
             tools:text="タグ名" />
