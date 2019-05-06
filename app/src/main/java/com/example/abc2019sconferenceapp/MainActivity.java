@@ -11,12 +11,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+
+import com.example.abc2019sconferenceapp.Fragment.BazzarFragment;
 import com.example.abc2019sconferenceapp.Fragment.FavoriteFragment;
 import com.example.abc2019sconferenceapp.Fragment.OtherFragment;
 import com.example.abc2019sconferenceapp.Fragment.SearchFragment;
 import com.example.abc2019sconferenceapp.Fragment.TimelineFragment;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
+import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
 
@@ -42,12 +45,16 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.navigation);
 
+        //TODO URLを書き換える
+        String url = "{\"version\": \"1\", \"data\": [{\"itemID\": \"0001\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0002\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0003\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0004\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0005\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}]}";
         //JsonDataを読み込む
-        HTTPResponse httpResponse = new HTTPResponse();
+        HTTPResponse httpResponse = new HTTPResponse(url);
         httpResponse.setOnCallBack(new HTTPResponse.CallBackTask() {
             @Override
             public void Callback(Object o) {
-                timelineData = (TimelineDataBean) o;
+                JSONObject jsonObject = (JSONObject) o;
+                Gson gson = new Gson();
+                timelineData = gson.fromJson(jsonObject.toString(), TimelineDataBean.class);//TimelineDataBeanにデータが入る
                 Log.d("TAG","非同期処理が終了しました。");
                 setFavo();
                 setSelectedListener();
@@ -119,6 +126,13 @@ public class MainActivity extends AppCompatActivity {
                             fragmentManager.popBackStack();
                         }
                         fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new SearchFragment()).commitAllowingStateLoss();
+                        return true;
+                    case R.id.bazzar:
+                        int bazzarCount = fragmentManager.getBackStackEntryCount();
+                        for (int i = 0; i < bazzarCount; i++) {
+                            fragmentManager.popBackStack();
+                        }
+                        fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new BazzarFragment()).commitAllowingStateLoss();
                         return true;
                     case R.id.favorite:
                         int favoriteCount = fragmentManager.getBackStackEntryCount();

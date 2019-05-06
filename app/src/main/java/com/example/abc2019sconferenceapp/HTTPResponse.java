@@ -19,6 +19,11 @@ import okhttp3.ResponseBody;
 public class HTTPResponse extends AsyncTask {
 
     private CallBackTask callBackTask;
+    private String url;
+
+    public HTTPResponse(String url) {
+        this.url = url;
+    }
 
     @Override
     protected void onPreExecute() {
@@ -28,24 +33,22 @@ public class HTTPResponse extends AsyncTask {
     @Override
     protected Object doInBackground(Object[] objects) {
         //Test用のJson
-        String Json = "{\"version\": \"1\", \"data\": [{\"itemID\": \"0001\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0002\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0003\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0004\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0005\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}]}";
+        String Json = url;//TODO Githubからホスティングできるように変更する
 
         String url = "http://www.ekidata.jp/api/p/23.json";//TODO ここのIDを変更する
         OkHttpClient client = new OkHttpClient();
         final Request request = new Request.Builder().url(url).build();
-        TimelineDataBean timelineDataBean = null;
+        JSONObject jsonObject = null;
         try {
 //            Response response = client.newCall(request).execute();
 //            ResponseBody body = response.body();
 //            String json = body.string();//これがAPIを通じて帰ってきたString型のJsonデータ
 
-            JSONObject jsonObject = new  JSONObject(Json.toString());//Json形式の文字列をJsonObjectに変換する //TODO テスト用Jsonではなく、Github上のファイルを読み込めるようにする
-            Gson gson = new Gson();
-            timelineDataBean = gson.fromJson(jsonObject.toString(), TimelineDataBean.class);//TimelineDataBeanにデータが入る
+            jsonObject = new  JSONObject(Json.toString());//Json形式の文字列をJsonObjectに変換する //TODO テスト用Jsonではなく、Github上のファイルを読み込めるようにする
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return timelineDataBean;
+        return jsonObject;
     }
 
     @Override

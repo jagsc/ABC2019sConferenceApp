@@ -11,6 +11,11 @@
         android:title="search" />
 
     <item
+        android:id="@+id/bazzar"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:title="bazzar" />
+
+    <item
         android:id="@+id/favorite"
         android:icon="@android:drawable/btn_star"
         android:title="favorite" />

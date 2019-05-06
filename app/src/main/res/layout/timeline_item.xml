@@ -10,7 +10,9 @@
         android:id="@+id/timelineCell"
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@color/item_bg">
 
         <TextView
             android:id="@+id/place_text"

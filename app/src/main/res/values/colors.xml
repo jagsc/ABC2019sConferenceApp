@@ -5,4 +5,5 @@
     <color name="colorPrimaryLight">#009999</color>
     <color name="colorAccent">#D81B60</color>
     <color name="trans">#FFFFFF</color>
+    <color name="item_bg">#eaeaea</color>
 </resources>
