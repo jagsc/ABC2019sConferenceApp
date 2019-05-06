@@ -5,6 +5,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+
 import com.example.abc2019sconferenceapp.fragment.BazzarFragment;
 import com.example.abc2019sconferenceapp.fragment.FavoriteFragment;
 import com.example.abc2019sconferenceapp.fragment.OtherFragment;
@@ -15,10 +19,6 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -40,8 +40,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.navigation);
 
-        //TODO URLを書き換える
-        String url = "{\"version\": \"1\", \"data\": [{\"itemID\": \"0001\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0002\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0003\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0004\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}, {\"itemID\": \"0005\", \"title\": \"講演タイトル\", \"body\": \"講演内容です。\\n複数行に渡る場合があります。\\n講演内容がない場合はありません。\", \"presenterNames\": [{\"presenter\": \"発表太郎\"}, {\"presenter\": \"発表次郎\"}], \"presenterIcons\": [{\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg\"}, {\"iconUrl\": \"https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg\"}], \"belongs\": [{\"belong\": \"K大学\"}, {\"belong\": \"T大学\"}], \"slideUrls\": [{\"slideurl\": \"https://www.slideshare.net/akirasasaki1/android-things-101696989\"}], \"place\": \"1階第1研究室\", \"time\": \"11:00-11:45\", \"category\": \"keynote\", \"tags\": [{\"tag\": \"Android\"}, {\"tag\": \"Flutter\"}, {\"tag\": \"iOS\"}]}]}";
+        String url = "https://prprhyt.github.io/ABC2019sConferenceApp/time-table.json";
         //JsonDataを読み込む
         HTTPResponse httpResponse = new HTTPResponse(url);
         httpResponse.setOnCallBack(new HTTPResponse.CallBackTask() {
