@@ -1,14 +1,11 @@
 package com.example.abc2019sconferenceapp;
 
-import android.app.Service;
-import android.content.Intent;
-import android.os.IBinder;
 import android.util.Log;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-import static android.support.constraint.Constraints.TAG;
+import static androidx.constraintlayout.widget.Constraints.TAG;
 
 public class FirebaseMessaging extends FirebaseMessagingService {
     @Override

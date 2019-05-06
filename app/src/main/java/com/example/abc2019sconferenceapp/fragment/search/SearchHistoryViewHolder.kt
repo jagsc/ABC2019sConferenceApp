@@ -1,6 +1,5 @@
 package com.example.abc2019sconferenceapp.fragment.search
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.abc2019sconferenceapp.databinding.HistoryItemBinding

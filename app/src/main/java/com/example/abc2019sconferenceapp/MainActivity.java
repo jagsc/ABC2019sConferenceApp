@@ -1,25 +1,24 @@
 package com.example.abc2019sconferenceapp;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
-import androidx.annotation.NonNull;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-import androidx.fragment.app.FragmentManager;
-import androidx.appcompat.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 
+import com.example.abc2019sconferenceapp.fragment.BazzarFragment;
 import com.example.abc2019sconferenceapp.fragment.FavoriteFragment;
 import com.example.abc2019sconferenceapp.fragment.OtherFragment;
-import com.example.abc2019sconferenceapp.fragment.search.SearchFragment;
 import com.example.abc2019sconferenceapp.fragment.TimelineFragment;
+import com.example.abc2019sconferenceapp.fragment.search.SearchFragment;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
-import com.google.gson.JsonObject;
 
 import org.json.JSONObject;
 
-import java.util.Map;
-
-import okhttp3.internal.Util;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 public class MainActivity extends AppCompatActivity {
     private FirebaseAnalytics mFirebaseAnalytics;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        Bundle bundle = new Bundle();
+        Bundle bundle = new Bundle();
 //        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "id");//TODO アプリのIDに変える
 //        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "name");//TODD アプリのnameに変える
 //        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "image");
@@ -149,30 +148,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
-    BottomNavigationView bottomNavigationView = findViewById(R.id.navigation);
-    bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-      @Override
-      public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        switch (menuItem.getItemId()) {
-          case R.id.timeline:
-            fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new TimelineFragment()).commit();
-            return true;
-          case R.id.search:
-            fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new SearchFragment()).commit();
-            return true;
-          case R.id.favorite:
-            fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new FavoriteFragment()).commit();
-            return true;
-          case R.id.other:
-            fragmentManager.beginTransaction().replace(R.id.setFragmentLayout, new OtherFragment()).commit();
-            return true;
-        }
-        return false;
-      }
-    });
-
-  }
 }
