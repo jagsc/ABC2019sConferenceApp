@@ -30,7 +30,7 @@ public class BazzarFragment extends Fragment {
         final View v = inflater.inflate(R.layout.fragment_bazzar, container, false);
         bazzarRecyclerView = v.findViewById(R.id.bazzarRecyclerView);
 
-        String url = "https://prprhyt.github.io/ABC2019sConferenceApp/time-table.json";
+        String url = "https://jagsc.github.io/ABC2019sConferenceApp/bazzar.json";
         //JsonDataを読み込む
         HTTPResponse httpResponse = new HTTPResponse(url);
         httpResponse.setOnCallBack(new HTTPResponse.CallBackTask() {
