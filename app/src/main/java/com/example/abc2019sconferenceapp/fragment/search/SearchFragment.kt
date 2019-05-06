@@ -16,7 +16,6 @@ import com.example.abc2019sconferenceapp.fragment.search.domain.SearchHistoryRea
 import com.example.abc2019sconferenceapp.fragment.search.domain.SearchHistoryRepository
 import com.example.abc2019sconferenceapp.fragment.search.domain.entity.SearchHistoryEntity
 import com.example.abc2019sconferenceapp.fragment.search.infra.SearchHistoryRepositoryImpl
-import kotlinx.android.synthetic.main.fragment_search.view.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -88,7 +87,7 @@ internal class SearchFragment : Fragment() {
             if (searchHistoryBindingItem.queryText.isEmpty()) {
               return
             } else {
-              binding.textView.searchBar.text.append(searchHistoryBindingItem.queryText)
+              binding.searchBar.text.append(searchHistoryBindingItem.queryText)
             }
           }
         }
