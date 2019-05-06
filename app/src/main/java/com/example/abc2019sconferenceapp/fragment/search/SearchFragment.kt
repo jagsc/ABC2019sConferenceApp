@@ -56,7 +56,8 @@ internal class SearchFragment : Fragment() {
               searchText
             )
           )
-        } catch (e: Exception) {
+        } catch (e : java.lang.Exception) {
+          e.printStackTrace()
           Toast.makeText(requireContext(), "検索履歴の追加に失敗しました", Toast.LENGTH_SHORT).show()
         }
       }
@@ -79,8 +80,9 @@ internal class SearchFragment : Fragment() {
       val context = requireContext()
       try {
         val searchHistory = withContext(Dispatchers.IO) { searchHistoryReadonlyRepository.loadSearchHistry() }.convert()
+        val searchHistoryList = searchHistory.distinctBy { it.queryText }//重複を削除した結果をsearchHistoryListに代入する
         val searchHistoryAdapter = SearchHistoryAdapter()
-        searchHistoryAdapter.submitList(searchHistory)
+        searchHistoryAdapter.submitList(searchHistoryList)
 
         searchHistoryAdapter.searchHistoryItemClickListener = object : SearchHistoryItemClickListener {
           override fun onClick(searchHistoryBindingItem: SearchHistoryBindingItem) {
