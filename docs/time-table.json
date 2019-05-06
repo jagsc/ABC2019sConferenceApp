@@ -1,9 +1,8 @@
 {
+	"version":"1",
 	"data": [
 		{
 			"itemID": "0001",
-			"favo": "0",
-			"search": "0",
 			"title": "講演タイトル",
 			"body":"講演内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
 			"presenterNames": [
@@ -11,7 +10,15 @@
 					"presenter": "発表太郎"
 				},
 				{
-					"Presenter": "発表次郎"
+					"presenter": "発表次郎"
+				}
+			],
+			"presenterIcons": [
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+				},
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg"
 				}
 			],
 			"belongs": [
@@ -22,8 +29,14 @@
 					"belong": "T大学"
 				}
 			],
+			"slideUrls": [
+				{
+					"slideurl": "https://www.slideshare.net/akirasasaki1/android-things-101696989"
+				}
+			],
 			"place": "1階第1研究室",
 			"time": "11:00-11:45",
+			"category": "keynote",
 			"tags": [
 				{
 					"tag": "Android"
@@ -38,8 +51,6 @@
 		},
 		{
 			"itemID": "0002",
-			"favo": "0",
-			"search": "0",
 			"title": "講演タイトル",
 			"body":"講演内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
 			"presenterNames": [
@@ -47,7 +58,15 @@
 					"presenter": "発表太郎"
 				},
 				{
-					"Presenter": "発表次郎"
+					"presenter": "発表次郎"
+				}
+			],
+			"presenterIcons": [
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+				},
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg"
 				}
 			],
 			"belongs": [
@@ -58,8 +77,14 @@
 					"belong": "T大学"
 				}
 			],
+			"slideUrls": [
+				{
+					"slideurl": "https://www.slideshare.net/akirasasaki1/android-things-101696989"
+				}
+			],
 			"place": "1階第1研究室",
 			"time": "11:00-11:45",
+			"category": "keynote",
 			"tags": [
 				{
 					"tag": "Android"
@@ -74,8 +99,6 @@
 		},
 		{
 			"itemID": "0003",
-			"favo": "0",
-			"search": "0",
 			"title": "講演タイトル",
 			"body":"講演内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
 			"presenterNames": [
@@ -83,7 +106,15 @@
 					"presenter": "発表太郎"
 				},
 				{
-					"Presenter": "発表次郎"
+					"presenter": "発表次郎"
+				}
+			],
+			"presenterIcons": [
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+				},
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg"
 				}
 			],
 			"belongs": [
@@ -94,8 +125,14 @@
 					"belong": "T大学"
 				}
 			],
+			"slideUrls": [
+				{
+					"slideurl": "https://www.slideshare.net/akirasasaki1/android-things-101696989"
+				}
+			],
 			"place": "1階第1研究室",
 			"time": "11:00-11:45",
+			"category": "keynote",
 			"tags": [
 				{
 					"tag": "Android"
@@ -110,8 +147,6 @@
 		},
 		{
 			"itemID": "0004",
-			"favo": "0",
-			"search": "0",
 			"title": "講演タイトル",
 			"body":"講演内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
 			"presenterNames": [
@@ -119,7 +154,15 @@
 					"presenter": "発表太郎"
 				},
 				{
-					"Presenter": "発表次郎"
+					"presenter": "発表次郎"
+				}
+			],
+			"presenterIcons": [
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+				},
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg"
 				}
 			],
 			"belongs": [
@@ -130,8 +173,62 @@
 					"belong": "T大学"
 				}
 			],
+			"slideUrls": [
+				{
+					"slideurl": "https://www.slideshare.net/akirasasaki1/android-things-101696989"
+				}
+			],
 			"place": "1階第1研究室",
 			"time": "11:00-11:45",
+			"category": "keynote",
+			"tags": [
+				{
+					"tag": "Android"
+				},
+				{
+					"tag": "Flutter"
+				},
+				{
+					"tag": "iOS"
+				}
+			]
+		},
+		{
+			"itemID": "0005",
+			"title": "講演タイトル",
+			"body":"講演内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"presenterNames": [
+				{
+					"presenter": "発表太郎"
+				},
+				{
+					"presenter": "発表次郎"
+				}
+			],
+			"presenterIcons": [
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+				},
+				{
+					"iconUrl": "https://pbs.twimg.com/media/D4_XIlIU8AEqmAa.jpg"
+				}
+			],
+			"belongs": [
+				{
+					"belong": "K大学"
+				},
+				{
+					"belong": "T大学"
+				}
+			],
+			"slideUrls": [
+				{
+					"slideurl": "https://www.slideshare.net/akirasasaki1/android-things-101696989"
+				}
+			],
+			"place": "1階第1研究室",
+			"time": "11:00-11:45",
+			"category": "keynote",
 			"tags": [
 				{
 					"tag": "Android"
