@@ -1,0 +1,40 @@
+{
+	"version":"1",
+	"data": [
+		{
+			"boothNum": "1",
+			"title": "ブースタイトル",
+			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"companyName": "ABC会社",
+			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+		},
+		{
+			"boothNum": "2",
+			"title": "ブースタイトル",
+			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"companyName": "ABC会社",
+			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+		},
+		{
+			"boothNum": "3",
+			"title": "ブースタイトル",
+			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"companyName": "ABC会社",
+			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+		},
+		{
+			"boothNum": "4",
+			"title": "ブースタイトル",
+			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"companyName": "ABC会社",
+			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+		},
+		{
+			"boothNum": "5",
+			"title": "ブースタイトル",
+			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
+			"companyName": "ABC会社",
+			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+		}
+	]
+}
