@@ -15,13 +15,11 @@ import com.example.abc2019sconferenceapp.fragment.OtherFragment;
 import com.example.abc2019sconferenceapp.fragment.TimelineFragment;
 import com.example.abc2019sconferenceapp.fragment.search.SearchFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.gson.Gson;
 
 import org.json.JSONObject;
 
 public class MainActivity extends AppCompatActivity {
-    private FirebaseAnalytics mFirebaseAnalytics;
     public static TimelineDataBean timelineData = null;//Jsonデータは動的に変わることがないので、MainActivityだけで1回読み込んで、各Fragmentからデータを読み出すようにする
     private BottomNavigationView bottomNavigationView;
 
@@ -30,13 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Bundle bundle = new Bundle();
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_ID, "id");//TODO アプリのIDに変える
-//        bundle.putString(FirebaseAnalytics.Param.ITEM_NAME, "name");//TODD アプリのnameに変える
-//        bundle.putString(FirebaseAnalytics.Param.CONTENT_TYPE, "image");
-          if (mFirebaseAnalytics != null) {
-              mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.SELECT_CONTENT, bundle);            
-          }
 
         bottomNavigationView = findViewById(R.id.navigation);
 
@@ -48,10 +39,12 @@ public class MainActivity extends AppCompatActivity {
             public void Callback(Object o) {
                 JSONObject jsonObject = (JSONObject) o;
                 Gson gson = new Gson();
-                timelineData = gson.fromJson(jsonObject.toString(), TimelineDataBean.class);//TimelineDataBeanにデータが入る
-                Log.d("TAG","非同期処理が終了しました。");
-                setFavo();
-                setSelectedListener();
+                if (jsonObject != null) {
+                    timelineData = gson.fromJson(jsonObject.toString(), TimelineDataBean.class);//TimelineDataBeanにデータが入る
+                    Log.d("TAG", "非同期処理が終了しました。");
+                    setFavo();
+                    setSelectedListener();
+                }
             }
         });
         httpResponse.execute(AsyncTask.SERIAL_EXECUTOR);//非同期処理を実行
