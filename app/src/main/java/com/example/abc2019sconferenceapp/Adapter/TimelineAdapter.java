@@ -20,6 +20,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.jetbrains.annotations.NotNull;
+
 public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.TimelineRecyclerViewHolder> {
     private TimelineDataBean dataBeans;
     private FragmentManager fragmentManager;
@@ -122,6 +124,11 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
         } else {
             return 0;
         }
+    }
+
+    @Override
+    public void onViewRecycled(@NotNull TimelineRecyclerViewHolder holder) {
+        holder.tagLayout.removeAllViews();
     }
 
     class TimelineRecyclerViewHolder extends RecyclerView.ViewHolder {

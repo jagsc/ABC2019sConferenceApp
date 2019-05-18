@@ -64,10 +64,14 @@ public class DetailFragment extends Fragment {
                 textView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        String url = timelineData.getSlideUrls().get(pos).getSlideurl();
-                        Uri uri = Uri.parse(url);
-                        Intent intent = new Intent(Intent.ACTION_VIEW, uri);
-                        startActivity(intent);
+                        if (timelineData.getSlideUrls()!= null && timelineData.getSlideUrls().get(pos).getSlideurl() != null) {
+                            String url = timelineData.getSlideUrls().get(pos).getSlideurl();
+                            if (!url.equals("")) {
+                                Uri uri = Uri.parse(url);
+                                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                                startActivity(intent);
+                            }
+                        }
                     }
                 });
             }

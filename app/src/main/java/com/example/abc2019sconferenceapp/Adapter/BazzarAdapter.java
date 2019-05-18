@@ -39,7 +39,7 @@ public class BazzarAdapter extends RecyclerView.Adapter<BazzarAdapter.BazzarRecy
         final BazzarDataBean.BazzarData itemList = dataBeans.getData().get(i);
         viewHolder.title.setText(itemList.getTitle());
         viewHolder.boothNum.setText("ブース番号:" + itemList.getBoothNum());
-        viewHolder.companyName.setText(itemList.getCompanyName());
+        viewHolder.companyName.setText("出展者名:" + itemList.getCompanyName());
         viewHolder.body.setText(itemList.getBody());
         Glide.with(fragment).load(itemList.getCompanyIcon()).into(viewHolder.companyIcon);
     }

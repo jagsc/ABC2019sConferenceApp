@@ -14,10 +14,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
 
-        <meta-data
-            android:name="com.google.android.actions"
-            android:resource="@menu/bottom_navigation_menu" />
-
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

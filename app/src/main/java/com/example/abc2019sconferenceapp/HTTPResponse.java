@@ -34,7 +34,7 @@ public class HTTPResponse extends AsyncTask {
             ResponseBody body = response.body();
             String json = body.string();//これがAPIを通じて帰ってきたString型のJsonデータ
 
-            jsonObject = new  JSONObject(json);//Json形式の文字列をJsonObjectに変換する //TODO テスト用Jsonではなく、Github上のファイルを読み込めるようにする
+            jsonObject = new  JSONObject(json);//Json形式の文字列をJsonObjectに変換する
         } catch (Exception e) {
             e.printStackTrace();
         }
