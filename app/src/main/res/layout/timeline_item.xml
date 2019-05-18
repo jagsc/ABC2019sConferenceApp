@@ -27,6 +27,20 @@
             tools:text="講演場所" />
 
         <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/timeText"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="講演タイトル\n改行あるバージョン" />
+
+        <TextView
             android:id="@+id/name_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,18 +51,6 @@
             app:layout_constraintStart_toEndOf="@+id/timeText"
             app:layout_constraintTop_toBottomOf="@+id/title_text"
             tools:text="講演者名" />
-
-        <TextView
-            android:id="@+id/title_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:textColor="@android:color/black"
-            android:textSize="30sp"
-            app:layout_constraintStart_toEndOf="@+id/timeText"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="講演タイトル\n改行あるバージョン" />
 
         <TextView
             android:id="@+id/timeText"
@@ -81,7 +83,7 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/timeText"
