@@ -7,7 +7,7 @@
 
         <variable
             name="bindingitem"
-            type="com.example.abc2019sconferenceapp.fragment.search.SearchHistoryBindingItem" />
+            type="jagsc.jp.abc2019Sconferenceapp.fragment.search.SearchHistoryBindingItem" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

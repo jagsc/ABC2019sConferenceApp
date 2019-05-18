@@ -8,7 +8,7 @@ apply plugin: 'kotlin-kapt'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.example.abc2019sconferenceapp"
+        applicationId "jagsc.jp.abc2019Sconferenceapp"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
