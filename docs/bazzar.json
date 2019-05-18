@@ -1,40 +1,89 @@
 {
-	"version":"1",
+	"version": "2",
 	"data": [
 		{
 			"boothNum": "1",
-			"title": "ブースタイトル",
-			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
-			"companyName": "ABC会社",
-			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+			"title": "浜松支部アプリ紹介",
+			"body": "浜松支部で作成したアプリを展示します。",
+			"companyName": "日本Androidの会 浜松支部",
+			"companyIcon": ""
 		},
 		{
 			"boothNum": "2",
-			"title": "ブースタイトル",
-			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
-			"companyName": "ABC会社",
-			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+			"title": "南島原そうめん配布",
+			"body": "南島原産の島原手延べそうめんの配布と南島原市のPR",
+			"companyName": "日本Androidの会島原支部",
+			"companyIcon": ""
 		},
 		{
 			"boothNum": "3",
-			"title": "ブースタイトル",
-			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
-			"companyName": "ABC会社",
-			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+			"title": "JSバックアップ新製品のご紹介",
+			"body": "ソフトバンク「Pepper」の新モデル「Pepper for Home」に「JSバックアップ for Pepper」を提供しましたのでご紹介致します。",
+			"companyName": "株式会社情報スペース",
+			"companyIcon": ""
 		},
 		{
 			"boothNum": "4",
-			"title": "ブースタイトル",
-			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
-			"companyName": "ABC会社",
-			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+			"title": "ABC2019Sカンファレンスアプリの開発",
+			"body": "学生有志で今回のカンファレンスのアプリ開発を行いました。開発したアプリケーションの展示・配布を案内しています!",
+			"companyName": "日本Androidの会 学生部",
+			"companyIcon": "https://avatars0.githubusercontent.com/u/13821411?s=200&v=4"
 		},
 		{
 			"boothNum": "5",
-			"title": "ブースタイトル",
-			"body":"ブースの内容です。\n複数行に渡る場合があります。\n講演内容がない場合はありません。",
-			"companyName": "ABC会社",
-			"companyIcon": "https://pbs.twimg.com/media/D4_XIPYUUAEYVtX.jpg"
+			"title": "DonkeyCar",
+			"body": "DeepLearningの推論で動く自動運転ラジコン、DonkeyCarの展示をおこないます。",
+			"companyName": "株式会社GClue",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "6",
+			"title": "健康経営優良法人の取組み紹介",
+			"body": "弊社が、これまで、健康的なエンジニアを育成するために実施してきた、様々な施策の中に社員の運動量を上げるために開催している「歩数ポイント対決」イベントがあります。\n今回は、その中で利用するチーム別歩数ランキングアプリについてご紹介致します。それ以外にも、アナログ、デジタル問わず、エンジニア育成のために弊社が実施している取り組み事例をご紹介致します。",
+			"companyName": "株式会社YAZ",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "7",
+			"title": "農業ITプラットフォーム「みどりクラウド」",
+			"body": "これまでスマートフォンやIoTを使って農業生産の支援を行なっていたみどりクラウドは、新たに農産物流通・販売を支援する事業の展開を始めています。また、野菜の生産だけではなく、養豚や養鶏などの領域にもみどりクラウドの応用分野は拡大してきました。\nみどりクラウドのこれからの取り組みのご紹介を通じ、Androidの新しい可能性をお伝えできればと思います。",
+			"companyName": "株式会社セラク",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "8",
+			"title": "よちよちAndroidの会",
+			"body": "趣味でスマートフォンアプリを開発している初心者のサークルです。各メンバーが作ったアプリを展示します。",
+			"companyName": "よちよちAndroidサンデープログラミングの会",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "9",
+			"title": "Codeの力で世界の未来を変えよう! ",
+			"body": "Codeの力で世界の未来を変えてみませんか！IBMがリードするCode and Responseでは、開発者が世界の様々な課題に貢献できることを信じています。昨年発表された自然災害へCodeの力で立ち向かうCall for Codeチャレンジもその取組の一つです。本展示では、Code and Response／Call for Codeについてご案内いたします。",
+			"companyName": "IBM",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "10",
+			"title": "IoT Display",
+			"body": "BLEビーコンを受信して、その内容を表示するボタン電池で稼働する超小型ディスプレイ",
+			"companyName": "adlib",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "11",
+			"title": "ADK勉強会(東京)",
+			"body": "ADK (Android Open Accessory Development Kit) の勉強会として、2011年に発足したユーザーグループです。\n現在は趣味の電子工作サークルのような活動をしています。メンバーの作成したガジェットなどを展示します。",
+			"companyName": "ADK勉強会(東京)",
+			"companyIcon": ""
+		},
+		{
+			"boothNum": "12",
+			"title": "D卒業研究の展示および研究室の紹介",
+			"body": "卒業生の作成したアプリなどを展示し，体験してもらう．アプリのよっては，アンケートにも答えてもらう．",
+			"companyName": "東海大学理学部情報数理学科",
+			"companyIcon": ""
 		}
 	]
 }
