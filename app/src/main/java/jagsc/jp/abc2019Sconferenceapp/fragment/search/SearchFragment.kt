@@ -2,6 +2,7 @@ package jagsc.jp.abc2019Sconferenceapp.fragment.search
 
 import android.content.Context
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,44 +37,45 @@ internal class SearchFragment : Fragment() {
 
     val searchHistoryReadonlyRepository: SearchHistoryReadonlyRepository = SearchHistoryRepositoryImpl(requireContext())
     val searchHistoryRepository: SearchHistoryRepository = SearchHistoryRepositoryImpl(requireContext())
+    var searchText = ""
 
     binding.searchButton.setOnClickListener {
 
       GlobalScope.launch(Dispatchers.Main) {
         try {
-          val searchText = binding.searchBar.text.toString()
+          searchText = binding.searchBar.text.toString()
           if (searchText.isEmpty()) {
             return@launch
           }
           val searchHistory = withContext(Dispatchers.IO) { searchHistoryReadonlyRepository.loadSearchHistry() }.convert()
 
           fun nextSearchHistoryId(histryList: List<SearchHistoryBindingItem>) = histryList.map { it.id + 1 }.max()
-            ?: 0
+                  ?: 0
 
           searchHistoryRepository.addSearchHistory(
-            SearchHistoryEntity(
-              nextSearchHistoryId(searchHistory),
-              searchText
-            )
+                  SearchHistoryEntity(
+                          nextSearchHistoryId(searchHistory),
+                          searchText
+                  )
           )
-        } catch (e : java.lang.Exception) {
+        } catch (e: Exception) {
           e.printStackTrace()
           Toast.makeText(requireContext(), "検索履歴の追加に失敗しました", Toast.LENGTH_SHORT).show()
         }
+
+
+        val manager = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+        manager.hideSoftInputFromWindow(view?.windowToken, 0)
+        requireActivity()
+                .supportFragmentManager
+                .beginTransaction()
+                .addToBackStack(null)
+                .replace(
+                        R.id.searchLayout,
+                        SearchResultFragment.newInstance(searchText)
+                )
+                .commit()
       }
-
-      val manager = activity?.getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-      manager.hideSoftInputFromWindow(view?.windowToken, 0)
-
-      requireActivity()
-        .supportFragmentManager
-        .beginTransaction()
-        .addToBackStack(null)
-        .replace(
-          R.id.searchLayout,
-          SearchResultFragment()
-        )
-        .commitAllowingStateLoss()
     }
 
     GlobalScope.launch(Dispatchers.Main) {

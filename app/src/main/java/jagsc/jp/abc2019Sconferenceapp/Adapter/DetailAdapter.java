@@ -36,9 +36,15 @@ public class DetailAdapter extends RecyclerView.Adapter<DetailAdapter.DetailRecy
 
     @Override
     public void onBindViewHolder(@NonNull final DetailAdapter.DetailRecyclerViewHolder viewHolder, int i) {
-        Glide.with(fragment).load(dataBeans.getPresenterIcons().get(i).getIconUrl()).into(viewHolder.presenterIcon);
-        viewHolder.presenterName.setText(dataBeans.getPresenterNames().get(i).getPresenter());
-        viewHolder.companyName.setText(dataBeans.getBelongs().get(i).getBelong());
+        if (dataBeans.getPresenterIcons() != null && dataBeans.getPresenterIcons().size() != 0) {
+            Glide.with(fragment).load(dataBeans.getPresenterIcons().get(i).getIconUrl()).into(viewHolder.presenterIcon);
+        }
+        if (dataBeans.getPresenterNames() != null && dataBeans.getPresenterNames().size() != 0) {
+            viewHolder.presenterName.setText(dataBeans.getPresenterNames().get(i).getPresenter());
+        }
+        if (dataBeans.getBelongs() != null && dataBeans.getBelongs().size() != 0) {
+            viewHolder.companyName.setText(dataBeans.getBelongs().get(i).getBelong());
+        }
     }
 
     @Override

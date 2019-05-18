@@ -22,6 +22,14 @@ import java.util.List;
 public class SearchResultFragment extends Fragment {
     String keyWard = "";
 
+    public static SearchResultFragment newInstance(String args ) {
+        SearchResultFragment fragment = new SearchResultFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("key", args);
+        fragment.setArguments(bundle);
+        return fragment;
+    }
+
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
