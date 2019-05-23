@@ -1,882 +1,1120 @@
 {
-	"version": "2",
-	"data": [
-		{
-			"itemID": "0001",
-			"title": "OSAWGの近況と注目のRISC-VをFPGAで動かそう",
-			"body": "日本Androidの会　WGの一つ、OSAWG(Open Soc Android)の取り組み\n対応するSoC　ルネサスエレクトロニクス　RZ/G2シリーズボードについて\n外部Ｉ／Ｆとロードマップの説明\n手を動かす方では、最近注目されているＲＩＳＣ－Ｖを安価なＦＰＧＡボードで動かしていく事で、ＦＰＧＡの理解を深めて頂く為の概要となります。",
-			"presenterNames": [
-				{
-					"presenter": "鈴木　直康"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "株式会社芳和システムデザイン　日本Androidの会　運営委員"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "FPGA"
-				},
-				{
-					"tag": "OSAWG"
-				},
-				{
-					"tag": "Android"
-				}
-			]
-		},
-		{
-			"itemID": "0002",
-			"title": "空飛ぶクルマ「SkyDrive」の開発について",
-			"body": "「誰もがいつでも、どこでも空を飛べるという時代を創る」というビジョンを掲げ、取り組んで参りました「空飛ぶクルマ」開発。これまでの活動、そしてこれからをご紹介いたします。",
-			"presenterNames": [
-				{
-					"presenter": "柳村　将平"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "株式会社SkyDrive"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "SkyDrive"
-				},
-				{
-					"tag": "空飛ぶクルマ"
-				}
-			]
-		},
-		{
-			"itemID": "0003",
-			"title": "調整中",
-			"body": "調整中",
-			"presenterNames": [
-				{
-					"presenter": "宮本 将"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/967687589678399488/Eu8zGUy3_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "日本経済新聞社"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": ""
-				}
-			]
-		},
-		{
-			"itemID": "0004",
-			"title": "電子立国再生への思いと、今挑戦していること",
-			"body": "電子立国日本の基礎となった、青少年向けの電子ホビーの軌跡を担当した雑誌「ラジオの製作」「マイコンBASICマガジン」などを振り返りながら紹介。PCや携帯電話、薄型テレビで世界をけん引してきた日本のスローダウンの検証。電子立国再生に向けて取り組んでいることと、希望の兆しについて、実例をあげてお話いたします。",
-			"presenterNames": [
-				{
-					"presenter": "大橋　太郎"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/1228027143/41383_100001534323688_1481_q_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社電波新聞社　編集本部/出版部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "ラジオの製作"
-				},
-				{
-					"tag": "マイコンBASICマガジン"
-				}
-			]
-		},
-		{
-			"itemID": "0005",
-			"title": "（仮）とーきょーこーきょーこーつーおーぷんでーたちゃれんじについて",
-			"body": "東京公共交通オープンデータを利用してアプリを作りながら思った些細なTIPなどを共有します",
-			"presenterNames": [
-				{
-					"presenter": "イ ボギョン"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "GMOペパボ株式会社"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "東京公共交通オープンデータ"
-				},
-				{
-					"tag": "アプリ"
-				}
-			]
-		},
-		{
-			"itemID": "0006",
-			"title": "最低限機能・格安・長持ちスマホのためのOS「SUNBLAZE OS」",
-			"body": "スマートフォンは処理遅延や急なアプリのシャットダウンなどの動作不良を起こす。新興国の格安スマホではそれがたった1年で起きる。株式会社アメグミはその動作不良を限りなく無くし、格安のままスマホを使えるようにしている。",
-			"presenterNames": [
-				{
-					"presenter": "常盤　瑛祐"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://scontent.ffsz1-2.fna.fbcdn.net/v/t1.0-1/p160x160/48386996_2363640567039805_4512223354765180928_n.jpg?_nc_cat=109&_nc_ht=scontent.ffsz1-2.fna&oh=6a778733274d29e680cfbf3353174184&oe=5D65C273"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社アメグミ"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "SUNBLAZE OS"
-				}
-			]
-		},
-		{
-			"itemID": "0007",
-			"title": "つらいと評判のAndroid BLEをまだまだ使い倒す話",
-			"body": "AndroidのBLEアプリ開発で遭遇するはまりどころ、解析方法、つながりやすくするためのTipsを紹介します。",
-			"presenterNames": [
-				{
-					"presenter": "原田　賢太"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://scontent.ffsz1-2.fna.fbcdn.net/v/t1.0-1/c15.15.183.183a/s160x160/1001280_189153551267527_1865728871_n.jpg?_nc_cat=100&_nc_ht=scontent.ffsz1-2.fna&oh=beca65734500f55680c433aee1129128&oe=5D5C36C6"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "JapanTaxi株式会社"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "BLE"
-				},
-				{
-					"tag": "Android"
-				}
-			]
-		},
-		{
-			"itemID": "0008",
-			"title": "いざ就活！〜議事録係がAndroidエンジニアになるまで〜",
-			"body": "自分の経歴や転職活動を通じて学んできたことをお伝えします！",
-			"presenterNames": [
-				{
-					"presenter": "林田　守加"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/1112255910355722240/rlAMTgma_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "某SES企業、ちーむパンサル"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "就活"
-				},
-				{
-					"tag": "Android"
-				}
-			]
-		},
-		{
-			"itemID": "0009",
-			"title": "AI世代のデジタル教育\n―これからの時代を生きる子どもたちや私たちに必要なチカラ―",
-			"body": "プログラミングってどう教えればいいの？子どもにはいつからデバイスを与えるといいの？論理的思考力を育てるってどうすればいいの？ \nなど、次世代に求められる力が変化しているなかで、デジタルデバイスへの向き合い方やプログラミング教育について、情報系研究者としての視点と、3児の母としての視点からトークします。これからの時代を生きる子どもたちや、私たちに必要なチカラを考えていきましょう。\n",
-			"presenterNames": [
-				{
-					"presenter": "五十嵐　悠紀"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/2324467487/yn2zl1cp4ctm6znfxrxd_400x400.jpeg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "明治大学　総合数理学部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "論理的思考力"
-				},
-				{
-					"tag": "プログラミング"
-				}
-			]
-		},
-		{
-			"itemID": "0010",
-			"title": "PWA＋（仮）",
-			"body": "PWAを組み込むネイティブアプリなど、PWAを中心とした技術の広がり、その活用についてデモを交えてお話しします。\n5月上旬のGoogle IOの内容によってはその内容も組み込むつもりでいます。",
-			"presenterNames": [
-				{
-					"presenter": "進藤　龍之介"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/1035863679428845568/dkdmYsFP_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "日本Androidの会　Web Working Group"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "PWA"
-				}
-			]
-		},
-		{
-			"itemID": "0011",
-			"title": "Nuxt.jsとFirebaseを使ったPWA開発事例",
-			"body": "Vue.jsのフレームワークのNuxt.jsにはPWAモジュールというライブラリがあり、簡単にPWA対応したWebアプリケーションを作成することが可能です。実際の個人開発で、Nuxt.jsとFirebaseを使い2日間という短期間で、PWAアプリの開発・リリースをした時の開発事例を紹介します。",
-			"presenterNames": [
-				{
-					"presenter": "菅家　大地"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/1105292920536457216/ZOM6gC_S_400x400.png"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社TAM"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Nuxt.js"
-				},
-				{
-					"tag": "Firebase"
-				},
-				{
-					"tag": "PWA"
-				}
-			]
-		},
-		{
-			"itemID": "0012",
-			"title": "Updates on Google アシスタント ",
-			"body": "Google I/O 2019で発表があったGoogleアシスタントについての最新情報を中心に、WebやAndroid開発者がGoogleアシスタントに対応する方法や現地で体験、聞いてきた内容について話します。",
-			"presenterNames": [
-				{
-					"presenter": "一円　真治"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/986547488340377604/3PwDOHzK_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "ヤフー株式会社"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Google I/O"
-				},
-				{
-					"tag": "Google アシスタント"
-				}
-			]
-		},
-		{
-			"itemID": "0013",
-			"title": "2019年春の技術であのARアプリを再現する",
-			"body": "強化されたAugmented ImagesなどGoogle I/Oで発表されたARCoreの最新機能、そしてSceneform, Firebaseなど2019年春の技術を駆使してスマートフォン黎明期のARアプリであるセカイカメラを再現したらどのような構成になるのか試してみました（発表者は当時の開発メンバーの1人）。その過程を通じてAndroid用のARアプリを開発する方法についてお話したいと思います。",
-			"presenterNames": [
-				{
-					"presenter": "高橋　憲一"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/1339731690/geordi_and_me2_sq_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社カブク"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "AR"
-				},
-				{
-					"tag": "Sceneform"
-				},
-				{
-					"tag": "セカイカメラ"
-				}
-			]
-		},
-		{
-			"itemID": "0014",
-			"title": "Flutter Recap from I/O 2019 + α",
-			"body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
-			"presenterNames": [
-				{
-					"presenter": "神原　健一"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/703563227674726400/WK0WvV_g_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "NTTテクノクロス株式会社"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Flutter"
-				},
-				{
-					"tag": "iOS"
-				},
-				{
-					"tag": "Android"
-				}
-			]
-		},
-		{
-			"itemID": "0015",
-			"title": "Google I/O 2019 Recap MLセッション（入門からアプリ化まで）",
-			"body": "Google I/O 2019のセッションの見どころをできるだけ沢山ご紹介します。\n機械学習についてイチから勉強したい人、機械学習はよくわからないけどTensorFlowをエッジ（Android, iOS, ラズパイなど）で動かしたい人、Cloud AI関連技術に興味のある人などに有益な内容にする予定です。",
-			"presenterNames": [
-				{
-					"presenter": "足立　昌彦"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/21442012/adamrocker_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社カブク"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Google I/O"
-				},
-				{
-					"tag": "機械学習"
-				}
-			]
-		},
-		{
-			"itemID": "0016",
-			"title": "45分で作れるかCPU",
-			"body": "CPUを作ると聞くととても高度な技術や膨大な資金を要する印象をお持ちの方が多いかと思います。FPGAというユーザの手元で内部の回路を書き換えることのできる半導体デバイスを使えば、初心者でも手っ取り早く独自CPUの開発に取り組むことが可能です。今回はCPU作成やFPGAについて初めて触れる方にも簡単なCPUを作る過程を紹介します。https://www.facebook.com/imaoka.micihihiro",
-			"presenterNames": [
-				{
-					"presenter": "今岡　通博"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/2959037936/7a319a7a822a5d8a5a8377b63eda52b1_400x400.png"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "日本Androidの会FPGA部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "CPU"
-				},
-				{
-					"tag": "FPGA"
-				}
-			]
-		},
-		{
-			"itemID": "0017",
-			"title": "準天頂衛星受信機の動向について",
-			"body": "衛星測位受信機の市場は、従来マルチ GNSS 搬送波受信機とコード受信機に大別、前者は主 に測量分野で利用され、後者は小型端末（最近では時計、IoT 端末等）に搭載される傾向がある。 近年、自動走行車への衛星測位機能搭載トレンドが出始め、また、農機等で搬送波受信機を使っ たＲＴＫ測位の利用が活発になってきた。現在、これらの動きに対応し安価で小型の受信機開 発の動きが顕在化しつつある。本報告では、最近の受信機動向と今後のトレンドについて述べ る。 ",
-			"presenterNames": [
-				{
-					"presenter": "マツオカ　シゲル"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "（一財）衛星測位利用推進センター"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "GNSS"
-				},
-				{
-					"tag": "準天頂衛星受信機"
-				}
-			]
-		},
-		{
-			"itemID": "0018",
-			"title": "TensorFlowで趣味の画像収集サーバーを作る 2019年5月号",
-			"body": "** このプログラムには、一部の成人の方が不愉快に感じられる表現、また未成年には不適切な表現が含まれている可能性があります。聴講には参加者または保護者の判断が必要です。 **\n\nGoogleの技術を支える「TensorFlow」を使って、個人で趣味の画像収集サーバーの構築しています。\n\nKubernetes+Argo Workflowによる機械学習ワークフローの自動化、TensorFlow 2.0への対応など、課題に取り組む中でのつまづきや発見などを報告します。",
-			"presenterNames": [
-				{
-					"presenter": "Keiji　ARIYAMA"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://scontent.ffsz1-2.fna.fbcdn.net/v/t1.0-1/p160x160/53218917_10218508276287754_6459814989971587072_n.jpg?_nc_cat=102&_nc_ht=scontent.ffsz1-2.fna&oh=65b21ecd09269ceadcf4ea220104d1c5&oe=5D52D2BA"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "めがねをかけるんだ / C-LIS CO., LTD."
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "TensorFlow"
-				}
-			]
-		},
-		{
-			"itemID": "0019",
-			"title": "円周率世界記録31.4兆桁への道",
-			"body": "2019年3月14日に、円周率34兆4159億桁あまりをGoogle Cloudを使って計算し、世界記録を更新したことを発表しました。今回の講演では、円周率を計算するに至った動機、記録達成に使用した計算機クラスタのアーキテクチャ、パブリッククラウドを使ったことの意義などについて説明します。",
-			"presenterNames": [
-				{
-					"presenter": "岩尾　エマ　はるか"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/897419480095051777/S_WZT7Mk_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "Google"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "円周率"
-				},
-				{
-					"tag": "Google Cloud"
-				}
-			]
-		},
-		{
-			"itemID": "0020",
-			"title": "「5分で作れる！Glideappsではじめる超簡単PWA(ﾌﾟﾛｸﾞﾚｯｼﾌﾞ・ｳｪﾌﾞ・ｱﾌﾟﾘ)」",
-			"body": "Glideは、Googleスプレッドシートを使って超簡単にPWAを作れる環境です。\nGlideのチームは、Xamarinからのスピンアウトした4人を中心とした出来たばかりのベンチャーです。\nPWAは、開発環境を整備したりするのが結構面倒で、採用実績はまだまだ少ない状況です。\nコーディングレスでアプリ化出来るGlideは、あまり複雑なことはできません。しかし、利用開始の敷居がとても低く、今後エントリクラスの開発環境として広がっていく可能性があるのではないかと思っています。イベント用のランディングアプリや、カタログアプリなどであれば、今すぐにも使えます。当日はライブデモも予定しています。",
-			"presenterNames": [
-				{
-					"presenter": "kinneko"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/43366542/twittericon_400x400.png"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "JAG金沢支部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Glideapps"
-				},
-				{
-					"tag": "PWA"
-				}
-			]
-		},
-		{
-			"itemID": "0021",
-			"title": "Google I/O 2019 アプリの裏側",
-			"body": "毎年、Google I/Oの現地参加者、リモート参加者向けに Android, iOS, Web プラットフォームでアプリを公開しています。その時の開発のベストプラクティスや、Google I/Oで発表される新機能を取り入れることが多いので後にソースコードを公開して開発者の方々に参照していただく役割も持っています。\n講演では、2019年の Android アプリのテックリードをした経験から Dark theme, AR機能、Room を使用した全文検索などの機能や、リージョンをまたがった開発チーム体制でうまく機能したところ、改善点などをお話したいと思います。",
-			"presenterNames": [
-				{
-					"presenter": "萩倉　健支"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/813575262059147264/Z64LnXV9_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "Google"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Google I/O"
-				},
-				{
-					"tag": "AR"
-				},
-				{
-					"tag": "Room"
-				}
-			]
-		},
-		{
-			"itemID": "0022",
-			"title": "スマホ業界とエンジニアキャリア形成",
-			"body": "スピーカーはこれまで、SI業界、コンサル業界、スマホ業界（サイバーエージェント、GMOグループ、DeNA、ヤフー）を経験し、現在中規模のWeb企業でVP of Engineering および 事業責任者として働いています。\n\nエンジニアキャリアを積んできた一方でプロダクトマネージャとして事業目線でも強くコミットしてきており、これまでのキャリア形成の中で、何を想い何を選択してきたか、そういった過程における「考え方」を共有することで、私の事例をもとに、これからの業界キャリアを考える方たちの参考にしていただければと考えています。",
-			"presenterNames": [
-				{
-					"presenter": "里山　南人"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "株式会社ビデオマーケット"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "スマホ業界"
-				},
-				{
-					"tag": "キャリア"
-				}
-			]
-		},
-		{
-			"itemID": "0023",
-			"title": "Androidにおけるパフォーマンスチューニング実践II",
-			"body": "DroidKaigiで行った「Androidにおけるパフォーマンスチューニング実践」(リンク下)の続編です。\nhttps://speakerdeck.com/neonankiti/androidniokerupahuomansutiyuningushi-jian\n\n上記の発表を軽くおさらいしつつ、パフォーマンス改善するためのより実践的な方法をお伝えします。\n今回は、より具体的な実装内容(Constlayout, WorkManager) + Google IO 2019による新しい解析ツールにも触れていこうと思います。",
-			"presenterNames": [
-				{
-					"presenter": "南里　勇気"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://scontent.ffsz1-1.fna.fbcdn.net/v/t1.0-1/p160x160/58384663_2355944921136118_8607371175674249216_n.jpg?_nc_cat=111&_nc_ht=scontent.ffsz1-1.fna&oh=cf742807986743918a25ddac43a59384&oe=5D649532"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "株式会社FiNC Technologies"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "DroidKaigi"
-				},
-				{
-					"tag": "パフォーマンスチューニング"
-				}
-			]
-		},
-		{
-			"itemID": "0023",
-			"title": "そちらのご要望に合わせます",
-			"body": "そちらのご要望に合わせます",
-			"presenterNames": [
-				{
-					"presenter": "伊藤　洋一"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "三井トラスト基礎研究所"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": ""
-				}
-			]
-		},
-		{
-			"itemID": "0025",
-			"title": "・Service WorkerではじめるオフラインWebアプリの実装\n・Background Sync APIを使った実装について",
-			"body": "・Service Workerを使ったオフラインアプリの基礎部分の実装をお話しします。App Shellやオフライン対応の話を中心に、PWAやService Workerの概要を掴める内容になっています。\n・PWAが提供するオフライン・サポートの中で、Background Sync APIを使ったオフラインからオンラインに復帰した時の同期処理についてお話しします。",
-			"presenterNames": [
-				{
-					"presenter": "堀　正斉"
-				},
-				{
-					"presenter": "平田　智子"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/557792281575444480/iqUnekhX_400x400.jpeg"
-				},
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/953831050685198337/VV7Ki1gN_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "PWA Beginners"
-				},
-				{
-					"belong": "PWA Beginners"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "オフラインWebアプリ"
-				},
-				{
-					"tag": "Background Sync API"
-				},
-				{
-					"tag": "PWA"
-				}
-			]
-		},
-		{
-			"itemID": "0026",
-			"title": "Google I/O 2019 Recap!",
-			"body": "Google I/O 2019 で発表された最新の技術トピックを共有します。",
-			"presenterNames": [
-				{
-					"presenter": "鈴木　拓生"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/378800000672537135/2f5a340d5df2fb9b3baed2b1e22ea660_400x400.jpeg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "Google"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Google I/O"
-				}
-			]
-		},
-		{
-			"itemID": "0027",
-			"title": "産業用組込み機器へAndroid搭載の可能性",
-			"body": "産業市場でもAndroidの要求は高いが、Androidを産業用組み込み機器に採用するにあたって、製造メーカーの大きな課題は、10年以上におよぶソフトウェアの長期メンテナンスである。10年超の超長期メンテナンスをサポートするCIPカーネルとの組み合わせで、Androidの産業用途の可能性を探る。",
-			"presenterNames": [
-				{
-					"presenter": "片山　健久"
-				}
-			],
-			"presenterIcons": [],
-			"belongs": [
-				{
-					"belong": "ルネサスエレクトロニクス（株） エンタープライズ・インフラ・ソリューション事業部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "産業用組込み機器"
-				}
-			]
-		},
-		{
-			"itemID": "0028",
-			"title": "Android Qのセキュリティ/プライバシー概要",
-			"body": "Google I/O 2019の参加報告です!\nAndroid Qのセキュリティ/プライバシー保護の新機能の概要やAPIの変更点を中心に発表された内容を報告します。\n",
-			"presenterNames": [
-				{
-					"presenter": "木村　隼人"
-				}
-			],
-			"presenterIcons": [
-				{
-					"iconUrl": "https://pbs.twimg.com/profile_images/735023651217510401/b4Xw4p9y_400x400.jpg"
-				}
-			],
-			"belongs": [
-				{
-					"belong": "日本Androidの会 学生部"
-				}
-			],
-			"slideUrls": [],
-			"place": "Unknown",
-			"time": "Unknown",
-			"category": "Unknown",
-			"tags": [
-				{
-					"tag": "Android Q"
-				},
-				{
-					"tag": "セキュリティ/プライバシー"
-				},
-				{
-					"tag": "Google I/O"
-				}
-			]
-		}
-	]
+    "version": "3",
+    "data": [
+        {
+            "itemID": "0029",
+            "title": "開会宣言",
+            "body": "ABC2019 Springの開会宣言を行います。",
+            "presenterNames": [
+                {
+                    "presenter": "長尾ユリコ"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/nagao.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "日本Androidの会・ちーむパンサル・株式会社パンナコッタ/ABC2019 Spring 実行委員長・BOSS猿・CEO"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "10:00 ~ 10:05",
+            "category": "基調講演/LIFEトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0030",
+            "title": "会場についてのご案内",
+            "body": "会場についてのご案内",
+            "presenterNames": [
+                {
+                    "presenter": "大西建輔"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "東海大学/准教授"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "10:05 ~ 10:10",
+            "category": "基調講演/LIFEトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0026",
+            "title": "Google I/O 2019 Recap!",
+            "body": "Google I/O 2019 で発表された最新の技術トピックを共有します。",
+            "presenterNames": [
+                {
+                    "presenter": "鈴木拓生"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/takuo.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "Google/Developer Relations Program Manager"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "10:10 ~ 11:10",
+            "category": "基調講演/LIFEトラック",
+            "tags": [
+                {
+                    "tag": "Google I/O"
+                }
+            ]
+        },
+        {
+            "itemID": "0019",
+            "title": "円周率世界記録31.4兆桁への道",
+            "body": "2019年3月14日に、円周率34兆4159億桁あまりをGoogle Cloudを使って計算し、世界記録を更新したことを発表しました。今回の講演では、円周率を計算するに至った動機、記録達成に使用した計算機クラスタのアーキテクチャ、パブリッククラウドを使ったことの意義などについて説明します。",
+            "presenterNames": [
+                {
+                    "presenter": "岩尾エマはるか"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/iwao.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "Google/Developer Advocate"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "11:10 ~ 11:55",
+            "category": "基調講演/LIFEトラック",
+            "tags": [
+                {
+                    "tag": "円周率"
+                },
+                {
+                    "tag": "Google Cloud"
+                }
+            ]
+        },
+        {
+            "itemID": "0031",
+            "title": "IBM CloudではじめるNative Android Application開発",
+            "body": "IBM Cloudには、モバイルアプリ開発に必要な様々なツールや開発環境、実行プラットフォームが用意されています。しかし、クラウド環境の特徴でもありますが、いろいろな機能がありすぎてどれを組み合わせると効率的な開発ができるのか分かりづらい側面もあります。このセッションでは、IBM Cloudをベースとして効率的にAndroidアプリを作成する手順を解説します。",
+            "presenterNames": [
+                {
+                    "presenter": "萩野たいじ"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/hagino.jpeg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "IBM/Developer Advocate"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "13:00 ~ 13:45",
+            "category": "基調講演/LIFEトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0015",
+            "title": "Google I/O 2019 Recap MLセッション（入門からアプリ化まで）",
+            "body": "Google I/O 2019のセッションの見どころをできるだけ沢山ご紹介します。\n機械学習についてイチから勉強したい人、機械学習はよくわからないけどTensorFlowをエッジ（Android, iOS, ラズパイなど）で動かしたい人、Cloud AI関連技術に興味のある人などに有益な内容にする予定です。",
+            "presenterNames": [
+                {
+                    "presenter": "足立　昌彦"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/adam.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社カブク/CEO &amp; CTO"
+                }
+            ],
+            "slideUrls": [],
+            "place": " 4101",
+            "time": "13:00 ~ 13:45",
+            "category": "HOTトラック",
+            "tags": [
+                {
+                    "tag": "Google I/O"
+                },
+                {
+                    "tag": "機械学習"
+                }
+            ]
+        },
+        {
+            "itemID": "0025",
+            "title": "Service WorkerではじめるオフラインWebアプリの実装 / Background Sync APIを使った実装について",
+            "body": "(前半)Service Workerを使ったオフラインアプリの基礎部分の実装をお話しします。App Shellやオフライン対応の話を中心に、PWAやService Workerの概要を掴める内容になっています。\n\n(後半)PWAが提供するオフライン・サポートの中で、Background Sync APIを使ったオフラインからオンラインに復帰した時の同期処理についてお話しします。",
+            "presenterNames": [
+                {
+                    "presenter": "堀正斉"
+                },
+                {
+                    "presenter": "平田智子"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                },
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "PWA Beginners/PWA Beginners主催者"
+                },
+                {
+                    "belong": "PWA Beginners/PWA Beginners主催者"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4103",
+            "time": "13:00 ~ 13:45",
+            "category": "モバイルWebトラック",
+            "tags": [
+                {
+                    "tag": "オフラインWebアプリ"
+                },
+                {
+                    "tag": "Background Sync API"
+                },
+                {
+                    "tag": "PWA"
+                }
+            ]
+        },
+        {
+            "title": "準天頂衛星受信機の動向について",
+            "body": "衛星測位受信機の市場は、従来マルチ GNSS 搬送波受信機とコード受信機に大別、前者は主 に測量分野で利用され、後者は小型端末（最近では時計、IoT 端末等）に搭載される傾向がある。 近年、自動走行車への衛星測位機能搭載トレンドが出始め、また、農機等で搬送波受信機を使っ たＲＴＫ測位の利用が活発になってきた。現在、これらの動きに対応し安価で小型の受信機開 発の動きが顕在化しつつある。本報告では、最近の受信機動向と今後のトレンドについて述べ る。",
+            "presenterNames": [
+                {
+                    "presenter": "松岡 繁"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "（一財）衛星測位利用推進センター/シニアアドバイザー"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4104",
+            "time": "13:00 ~ 13:45",
+            "category": "コア技術トラック",
+            "tags": [
+                {
+                    "tag": "GNSS"
+                },
+                {
+                    "tag": "準天頂衛星受信機"
+                }
+            ]
+        },
+        {
+            "itemID": "0016",
+            "title": "45分で作れるかCPU",
+            "body": "CPUを作ると聞くととても高度な技術や膨大な資金を要する印象をお持ちの方が多いかと思います。FPGAというユーザの手元で内部の回路を書き換えることのできる半導体デバイスを使えば、初心者でも手っ取り早く独自CPUの開発に取り組むことが可能です。今回はCPU作成やFPGAについて初めて触れる方にも簡単なCPUを作る過程を紹介します。https://www.facebook.com/imaoka.micihihiro",
+            "presenterNames": [
+                {
+                    "presenter": "今岡通博"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/imaoka.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "日本Androidの会FPGA部/日本Androidの会FPGA部部長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4105",
+            "time": "13:00 ~ 13:45",
+            "category": "フィジカルトラック",
+            "tags": [
+                {
+                    "tag": "CPU"
+                },
+                {
+                    "tag": "FPGA"
+                }
+            ]
+        },
+        {
+            "itemID": "0032",
+            "title": "アプリとゲームのセキュリティーを高めよう",
+            "body": "Android アプリとゲームのセキュリティーの概要、主な攻撃とその対策を紹介します。",
+            "presenterNames": [
+                {
+                    "presenter": "ロドリゲス オスカル"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "グーグル合同会社/デベロッパー アドボケート"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4201",
+            "time": "13:00 ~ 13:45",
+            "category": "Androidトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0021",
+            "title": "Google I/O 2019 アプリの裏側",
+            "body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
+            "presenterNames": [
+                {
+                    "presenter": "萩倉健支"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/hagikura.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "Google/Developer Programs Engineer"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4202",
+            "time": "13:00 ~ 13:45",
+            "category": "Google I/Oトラック",
+            "tags": [
+                {
+                    "tag": "Google I/O"
+                },
+                {
+                    "tag": "AR"
+                },
+                {
+                    "tag": "Room"
+                }
+            ]
+        },
+        {
+            "itemID": "0033",
+            "title": "クルマとスマホが繋がる「SDLアプリ」はこんなふうに開発する",
+            "body": "100年に一度の変革が起こるといわれるモビリティの世界。SDL（Smart Device Link）は、スマートフォンからカーナビなど車載機を制御、クルマの情報をアプリに与えることもできる国内では自動車メーカー10社が参加するオープンソースの国際規格です。SDLアプリの開発ってどんなふうにやるのか？　今年は10月30日締め切りで開催が予定されるSDLアプリコンテストへも参加したアプリ事例を中心に紹介します。",
+            "presenterNames": [
+                {
+                    "presenter": "遠藤諭"
+                },
+                {
+                    "presenter": "市川 雅明"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                },
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社角川アスキー総合研究所/主席研究員"
+                },
+                {
+                    "belong": "株式会社オルトア/"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4304",
+            "time": "13:00 ~ 13:45",
+            "category": "テクニカルトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0034",
+            "title": "プロダクトは歳を重ねるととどうなってしまうの",
+            "body": "8年間組織でプロダクトの開発運用を担当してきたデザイナーの目線で、この8年間で変わったこと、かわらないことをふりかえり、この先どうなるのか...と、ガチで頭を抱えるコーナーです。\n\n聴講対象者\nプロダクト開発運用の現場で年をとると、人はどうなってしまうのかに興味がある人。\nプロダクトのステージにおうじてどんどん関わる人が変わって（増えて）いくことに戸惑いを感じる人。\n中国チームとのコミュニケーション、文化差異に興味がある人。\n１つのプロダクトがどのような過程をたどって成長していくのかに興味がある人。\n",
+            "presenterNames": [
+                {
+                    "presenter": "矢野りん"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/yano.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "バイドゥ株式会社/プロダクト事業部部長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "14:00 ~ 14:45",
+            "category": "基調講演/LIFEトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0022",
+            "title": "スマホ業界とエンジニアキャリア形成",
+            "body": "スピーカーはこれまで、SI業界、コンサル業界、スマホ業界（サイバーエージェント、GMOグループ、DeNA、ヤフー）を経験し、現在中規模のWeb企業でVP of Engineering および 事業責任者として働いています。\n\nエンジニアキャリアを積んできた一方でプロダクトマネージャとして事業目線でも強くコミットしてきており、これまでのキャリア形成の中で、何を想い何を選択してきたか、そういった過程における「考え方」を共有することで、私の事例をもとに、これからの業界キャリアを考える方たちの参考にしていただければと考えています。",
+            "presenterNames": [
+                {
+                    "presenter": "里山 南人"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/satoyama.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社ビデオマーケット/執行役員 VP of Engineering / サービスプラットフォームセクション長"
+                }
+            ],
+            "slideUrls": [],
+            "place": " 4101",
+            "time": "14:00 ~ 14:45",
+            "category": "HOTトラック",
+            "tags": [
+                {
+                    "tag": "スマホ業界"
+                },
+                {
+                    "tag": "キャリア"
+                }
+            ]
+        },
+        {
+            "itemID": "0011",
+            "title": "Nuxt.jsとFirebaseを使ったPWA開発事例",
+            "body": "Vue.jsのフレームワークのNuxt.jsにはPWAモジュールというライブラリがあり、簡単にPWA対応したWebアプリケーションを作成することが可能です。実際の個人開発で、Nuxt.jsとFirebaseを使い2日間という短期間で、PWAアプリの開発・リリースをした時の開発事例を紹介します。",
+            "presenterNames": [
+                {
+                    "presenter": "菅家 大地"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社TAM/フロントエンドエンジニア"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4103",
+            "time": "14:00 ~ 14:45",
+            "category": "モバイルWebトラック",
+            "tags": [
+                {
+                    "tag": "Nuxt.js"
+                },
+                {
+                    "tag": "Firebase"
+                },
+                {
+                    "tag": "PWA"
+                }
+            ]
+        },
+        {
+            "itemID": "0027",
+            "title": "産業用組込み機器へAndroid搭載の可能性",
+            "body": "産業市場でもAndroidの要求は高いが、Androidを産業用組み込み機器に採用するにあたって、製造メーカーの大きな課題は、10年以上におよぶソフトウェアの長期メンテナンスである。10年超の超長期メンテナンスをサポートするCIPカーネルとの組み合わせで、Androidの産業用途の可能性を探る。",
+            "presenterNames": [
+                {
+                    "presenter": "片山 健久"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "ルネサスエレクトロニクス（株） エンタープライズ・インフラ・ソリューション事業部/Senior Manager"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4104",
+            "time": "14:00 ~ 14:45",
+            "category": "コア技術トラック",
+            "tags": [
+                {
+                    "tag": "産業用組込み機器"
+                }
+            ]
+        },
+        {
+            "itemID": "0006",
+            "title": "最低限機能・格安・長持ちスマホのためのOS「SUNBLAZE OS」",
+            "body": "スマートフォンは処理遅延や急なアプリのシャットダウンなどの動作不良を起こす。新興国の格安スマホではそれがたった1年で起きる。株式会社アメグミはその動作不良を限りなく無くし、格安のままスマホを使えるようにしている。",
+            "presenterNames": [
+                {
+                    "presenter": "常盤瑛祐"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/tokiwa.jpeg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社アメグミ/Founder, CEO"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4105",
+            "time": "14:00 ~ 14:45",
+            "category": "フィジカルトラック",
+            "tags": [
+                {
+                    "tag": "SUNBLAZE OS"
+                }
+            ]
+        },
+        {
+            "itemID": "0005",
+            "title": "〜初心者歓迎〜みんなで 東京公共交通オープンデータチャレンジしよう！",
+            "body": "東京公共交通オープンデータを利用してアプリを作りながら思った些細なTIPなどを共有します",
+            "presenterNames": [
+                {
+                    "presenter": "イ ボギョン"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/ibogyoeng.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "GMOペパボ株式会社　ちーむパンサル/Android エンジニア"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4201",
+            "time": "14:00 ~ 14:45",
+            "category": "Androidトラック",
+            "tags": [
+                {
+                    "tag": "東京公共交通オープンデータ"
+                },
+                {
+                    "tag": "アプリ"
+                }
+            ]
+        },
+        {
+            "itemID": "0012",
+            "title": "Googleアシスタント最新情報と他プラットフォームへの拡張方法",
+            "body": "Google I/O 2019でのGoogleアシスタント関連の最新情報を中心に、Web、Android開発者がGoogleアシスタントに機能を拡張mする方法を各分野ごとに実装手順を踏まえてご紹介します。\nまた、現地で体験してきたことについてもお話できればと思います。",
+            "presenterNames": [
+                {
+                    "presenter": "一円 真治"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/ichien.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "ヤフー株式会社/メディアカンパニー 検索統括本部 ローカル検索本部  "
+                }
+            ],
+            "slideUrls": [],
+            "place": "4202",
+            "time": "14:00 ~ 14:45",
+            "category": "Google I/Oトラック",
+            "tags": [
+                {
+                    "tag": "Google I/O"
+                },
+                {
+                    "tag": "Google アシスタント"
+                }
+            ]
+        },
+        {
+            "itemID": "0018",
+            "title": "TensorFlowで趣味の画像収集サーバーを作る 2019年5月号",
+            "body": "** このプログラムには、一部の成人の方が不愉快に感じられる表現、また未成年には不適切な表現が含まれている可能性があります。聴講には参加者または保護者の判断が必要です。 **\n\nGoogleの技術を支える「TensorFlow」を使って、個人で趣味の画像収集サーバーの構築しています。\n\nKubernetes+Argo Workflowによる機械学習ワークフローの自動化、TensorFlow 2.0への対応など、課題に取り組む中でのつまづきや発見などを報告します。",
+            "presenterNames": [
+                {
+                    "presenter": "Keiji ARIYAMA"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/ariyama.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "めがねをかけるんだ / C-LIS CO., LTD./代表"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4304",
+            "time": "14:00 ~ 14:45",
+            "category": "テクニカルトラック",
+            "tags": [
+                {
+                    "tag": "TensorFlow"
+                }
+            ]
+        },
+        {
+            "itemID": "0009",
+            "title": "AI世代のデジタル教育―これからの時代を生きる子どもたちや私たちに必要なチカラ―",
+            "body": "プログラミングってどう教えればいいの？子どもにはいつからデバイスを与えるといいの？論理的思考力を育てるってどうすればいいの？ \nなど、次世代に求められる力が変化しているなかで、デジタルデバイスへの向き合い方やプログラミング教育について、情報系研究者としての視点と、3児の母としての視点からトークします。これからの時代を生きる子どもたちや、私たちに必要なチカラを考えていきましょう。\n",
+            "presenterNames": [
+                {
+                    "presenter": "五十嵐　悠紀"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/igarashi.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "明治大学　総合数理学部/准教授"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "15:00 ~ 15:45",
+            "category": "基調講演/LIFEトラック",
+            "tags": [
+                {
+                    "tag": "論理的思考力"
+                },
+                {
+                    "tag": "プログラミング"
+                }
+            ]
+        },
+        {
+            "itemID": "0008",
+            "title": "いざ就活！〜議事録係がAndroidエンジニアになるまで〜",
+            "body": "自分の経歴や転職活動を通じて学んできたことをお伝えします！",
+            "presenterNames": [
+                {
+                    "presenter": "林田守加"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/hayashida.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "ちーむパンサル/議事録係"
+                }
+            ],
+            "slideUrls": [],
+            "place": " 4101",
+            "time": "15:00 ~ 15:45",
+            "category": "HOTトラック",
+            "tags": [
+                {
+                    "tag": "就活"
+                },
+                {
+                    "tag": "Android"
+                }
+            ]
+        },
+        {
+            "itemID": "0020",
+            "title": "「5分で作れる！Glideappsではじめる超簡単PWA(ﾌﾟﾛｸﾞﾚｯｼﾌﾞ・ｳｪﾌﾞ・ｱﾌﾟﾘ)」　 / PWA＋（仮）",
+            "body": "(前半)Glideは、Googleスプレッドシートを使って超簡単にPWAを作れる環境です。\nGlideのチームは、Xamarinからのスピンアウトした4人を中心とした出来たばかりのベンチャーです。\nPWAは、開発環境を整備したりするのが結構面倒で、採用実績はまだまだ少ない状況です。\nコーディングレスでアプリ化出来るGlideは、あまり複雑なことはできません。しかし、利用開始の敷居がとても低く、今後エントリクラスの開発環境として広がっていく可能性があるのではないかと思っています。イベント用のランディングアプリや、カタログアプリなどであれば、今すぐにも使えます。当日はライブデモも予定しています。\n\n（後半）PWAを組み込むネイティブアプリなど、PWAを中心とした技術の広がり、その活用についてデモを交えてお話しします。\n5月上旬のGoogle IOの内容によってはその内容も組み込むつもりでいます。",
+            "presenterNames": [
+                {
+                    "presenter": "kinneko"
+                },
+                {
+                    "presenter": "進藤 龍之介"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": ""
+                },
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/shindou.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "JAG金沢支部/金沢支部長"
+                },
+                {
+                    "belong": "日本Androidの会　Web Working Group/エンジニア"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4103",
+            "time": "15:00 ~ 15:45",
+            "category": "モバイルWebトラック",
+            "tags": [
+                {
+                    "tag": "Glideapps"
+                },
+                {
+                    "tag": "PWA"
+                }
+            ]
+        },
+        {
+            "itemID": "0001",
+            "title": "OSAWGの近況と注目のRISC-VをFPGAで動かそう",
+            "body": "日本Androidの会　WGの一つ、OSAWG(Open Soc Android)の取り組み\n対応するSoC　ルネサスエレクトロニクス　RZ/G2シリーズボードについて\n外部Ｉ／Ｆとロードマップの説明\n手を動かす方では、最近注目されているＲＩＳＣ－Ｖを安価なＦＰＧＡボードで動かしていく事で、ＦＰＧＡの理解を深めて頂く為の概要となります。",
+            "presenterNames": [
+                {
+                    "presenter": "鈴木　直康"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社芳和システムデザイン　日本Androidの会　運営委員/設計部　部長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4104",
+            "time": "15:00 ~ 15:45",
+            "category": "コア技術トラック",
+            "tags": [
+                {
+                    "tag": "FPGA"
+                },
+                {
+                    "tag": "OSAWG"
+                },
+                {
+                    "tag": "Android"
+                }
+            ]
+        },
+        {
+            "itemID": "0004",
+            "title": "電子立国再生への思いと、今挑戦していること",
+            "body": "電子立国日本の基礎となった、青少年向けの電子ホビーの軌跡を担当した雑誌「ラジオの製作」「マイコンBASICマガジン」などを振り返りながら紹介。PCや携帯電話、薄型テレビで世界をけん引してきた日本のスローダウンの検証。電子立国再生に向けて取り組んでいることと、希望の兆しについて、実例をあげてお話いたします。",
+            "presenterNames": [
+                {
+                    "presenter": "大橋太郎"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/oohashi.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社電波新聞社　編集本部/出版部/特別相談役 コラムニスト 電子工作マガジン編集長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4105",
+            "time": "15:00 ~ 15:45",
+            "category": "フィジカルトラック",
+            "tags": [
+                {
+                    "tag": "ラジオの製作"
+                },
+                {
+                    "tag": "マイコンBASICマガジン"
+                }
+            ]
+        },
+        {
+            "itemID": "0035",
+            "title": "JavaでAndroidを始めた人のためのJava -> Kotlinライブコーディング",
+            "body": "JavaでAndroidを始めた人のためのJava -> Kotlinライブコーディング",
+            "presenterNames": [
+                {
+                    "presenter": "中川幸哉"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/nakagawa.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "ウォーターセル株式会社/モバイルチーム ディレクター"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4201",
+            "time": "15:00 ~ 15:45",
+            "category": "Androidトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0014",
+            "title": "Flutter Recap from I/O 2019 + α",
+            "body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
+            "presenterNames": [
+                {
+                    "presenter": "神原　健一"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kanbara.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "NTTテクノクロス株式会社/エバンジェリスト/テクニカルプロフェッショナル"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4202",
+            "time": "15:00 ~ 15:45",
+            "category": "Google I/Oトラック",
+            "tags": [
+                {
+                    "tag": "Flutter"
+                },
+                {
+                    "tag": "iOS"
+                },
+                {
+                    "tag": "Android"
+                }
+            ]
+        },
+        {
+            "itemID": "0036",
+            "title": "食農を支えるプラットフォーム「みどりクラウド」と今後の展開",
+            "body": "みどりクラウドは圃場環境のモニタリングを行う農業IoTサービスからスタートしましたが、今後は食農を支えるプラットフォームとして、APIによる他社サービスとの連携、生産者と実需者をつなぐサービスの展開などを図っていく予定です。\nこのようなみどりクラウドの取り組みを、AndroidをはじめとしたIT技術を「ライフ」を支えるプラットフォームに活用した事例としてご紹介したいと思います。",
+            "presenterNames": [
+                {
+                    "presenter": "持田宏平"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社セラク/デジタルトランスフォーメーション本部データサイエンス事業部 兼 みどりクラウド事業部事業部長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4304",
+            "time": "15:00 ~ 15:45",
+            "category": "テクニカルトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0023",
+            "title": "クロスするリアルと仮想ー経済の視点",
+            "body": "TBD",
+            "presenterNames": [
+                {
+                    "presenter": "伊藤洋一"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/ito.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "三井トラスト基礎研究所/出席研究員"
+                }
+            ],
+            "slideUrls": [],
+            "place": "大講義室",
+            "time": "16:00 ~ 16:45",
+            "category": "基調講演/LIFEトラック",
+            "tags": [
+                {
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "itemID": "0023",
+            "title": "Androidにおけるパフォーマンスチューニング実践II",
+            "body": "DroidKaigiで行った「Androidにおけるパフォーマンスチューニング実践」(リンク下)の続編です。\nhttps://speakerdeck.com/neonankiti/androidniokerupahuomansutiyuningushi-jian\n\n上記の発表を軽くおさらいしつつ、パフォーマンス改善するためのより実践的な方法をお伝えします。\n今回は、より具体的な実装内容(Constlayout, WorkManager) + Google IO 2019による新しい解析ツールにも触れていこうと思います。",
+            "presenterNames": [
+                {
+                    "presenter": "南里勇気"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/nanri.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社FiNC Technologies/Software Developer"
+                }
+            ],
+            "slideUrls": [],
+            "place": " 4101",
+            "time": "16:00 ~ 16:45",
+            "category": "HOTトラック",
+            "tags": [
+                {
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "itemID": "0003",
+            "title": "TBD",
+            "body": "TBD",
+            "presenterNames": [
+                {
+                    "presenter": "宮本 将"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "日本経済新聞社/Webエンジニア"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4103",
+            "time": "16:00 ~ 16:45",
+            "category": "モバイルWebトラック",
+            "tags": [
+                {
+                    "tag": ""
+                }
+            ]
+        },
+        {
+            "itemID": "0002",
+            "title": "空飛ぶクルマ「SkyDrive」の開発について",
+            "body": "「誰もがいつでも、どこでも空を飛べるという時代を創る」というビジョンを掲げ、取り組んで参りました「空飛ぶクルマ」開発。これまでの活動、そしてこれからをご紹介いたします。",
+            "presenterNames": [
+                {
+                    "presenter": "柳村将平"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社SkyDrive/技術開発部 ソフト/IFチームTL"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4104",
+            "time": "16:00 ~ 16:45",
+            "category": "コア技術トラック",
+            "tags": [
+                {
+                    "tag": "SkyDrive"
+                },
+                {
+                    "tag": "空飛ぶクルマ"
+                }
+            ]
+        },
+        {
+            "itemID": "0007",
+            "title": "つらいと評判のAndroid BLEをまだまだ使い倒す話",
+            "body": "AndroidのBLEアプリ開発で遭遇するはまりどころ、解析方法、つながりやすくするためのTipsを紹介します。",
+            "presenterNames": [
+                {
+                    "presenter": "原田賢太"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "JapanTaxi株式会社/Bluetooth engineer"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4105",
+            "time": "16:00 ~ 16:45",
+            "category": "フィジカルトラック",
+            "tags": [
+                {
+                    "tag": "BLE"
+                },
+                {
+                    "tag": "Android"
+                }
+            ]
+        },
+        {
+            "itemID": "0037",
+            "title": "古から最新までのAndroidアンチパターン",
+            "body": "長尾さんが集めてきたAndroid アンチパターンをあんざいゆきが解説します。",
+            "presenterNames": [
+                {
+                    "presenter": "あんざいゆき"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/anzai.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社ウフィカ/代表取締役総長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4201",
+            "time": "16:00 ~ 16:45",
+            "category": "Androidトラック",
+            "tags": {}
+        },
+        {
+            "itemID": "0028",
+            "title": "Android Qのセキュリティ/プライバシー概要",
+            "body": "Google I/O 2019の参加報告です!\nAndroid Qのセキュリティ/プライバシー保護の新機能の概要やAPIの変更点を中心に発表された内容を報告します。\n",
+            "presenterNames": [
+                {
+                    "presenter": "木村 隼人"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kimura.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "日本Androidの会 学生部/副部長"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4202",
+            "time": "16:00 ~ 16:45",
+            "category": "Google I/Oトラック",
+            "tags": [
+                {
+                    "tag": "Android Q"
+                },
+                {
+                    "tag": "セキュリティ/プライバシー"
+                },
+                {
+                    "tag": "Google I/O"
+                }
+            ]
+        },
+        {
+            "itemID": "0013",
+            "title": "2019年春の技術であのARアプリを再現する",
+            "body": "強化されたAugmented ImagesなどGoogle I/Oで発表されたARCoreの最新機能、そしてSceneform, Firebaseなど2019年春の技術を駆使してスマートフォン黎明期のARアプリであるセカイカメラを再現したらどのような構成になるのか試してみました（発表者は当時の開発メンバーの1人）。その過程を通じてAndroid用のARアプリを開発する方法についてお話したいと思います。",
+            "presenterNames": [
+                {
+                    "presenter": "高橋憲一"
+                }
+            ],
+            "presenterIcons": [
+                {
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/takahashi.jpg"
+                }
+            ],
+            "belongs": [
+                {
+                    "belong": "株式会社カブク/ソフトウェアエンジニア"
+                }
+            ],
+            "slideUrls": [],
+            "place": "4304",
+            "time": "16:00 ~ 16:45",
+            "category": "テクニカルトラック",
+            "tags": [
+                {
+                    "tag": "AR"
+                },
+                {
+                    "tag": "Sceneform"
+                },
+                {
+                    "tag": "セカイカメラ"
+                }
+            ]
+        }
+    ]
 }
