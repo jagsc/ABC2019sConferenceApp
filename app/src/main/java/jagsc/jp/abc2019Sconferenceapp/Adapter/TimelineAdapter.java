@@ -105,7 +105,7 @@ public class TimelineAdapter extends RecyclerView.Adapter<TimelineAdapter.Timeli
             public void onClick(View v) {
                 if(fragmentManager != null) {
                     Bundle bundle = new Bundle();
-                    bundle.putInt("position", position);
+                    bundle.putString("itemID", itemList.getItemID());
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                     // BackStackを設定
                     fragmentTransaction.addToBackStack(null);

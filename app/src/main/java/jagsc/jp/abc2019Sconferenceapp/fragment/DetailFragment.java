@@ -19,7 +19,20 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class DetailFragment extends Fragment {
-    private int position;
+    private String itemID;
+
+
+    private TimelineDataBean.TimelineData getTimelineDataFromItemID(String itemID){
+        for(TimelineDataBean.TimelineData d:MainActivity.timelineData.getData()){
+            if(null==d || null==d.getItemID()){
+                continue;
+            }
+            if(d.getItemID().equals(itemID)){
+                return d;
+            }
+        }
+        return null;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -28,11 +41,14 @@ public class DetailFragment extends Fragment {
 
         Bundle bundle = getArguments();
         if (bundle != null) {
-            position = bundle.getInt("position");
+            itemID = bundle.getString("itemID");
         }
 
         if (MainActivity.timelineData != null) {
-            final TimelineDataBean.TimelineData timelineData = MainActivity.timelineData.getData().get(position);
+            final TimelineDataBean.TimelineData timelineData = getTimelineDataFromItemID(itemID);
+            if(null==timelineData){
+                return v;
+            }
             RecyclerView detailRecyclerView = v.findViewById(R.id.presenterRecyclerView);
             DetailAdapter detailAdapter = new DetailAdapter(timelineData, getFragmentManager(), this);
 
