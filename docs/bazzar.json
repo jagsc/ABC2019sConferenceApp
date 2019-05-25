@@ -1,89 +1,117 @@
 {
-	"version": "2",
-	"data": [
-		{
-			"boothNum": "1",
-			"title": "浜松支部アプリ紹介",
-			"body": "浜松支部で作成したアプリを展示します。",
-			"companyName": "日本Androidの会 浜松支部",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "2",
-			"title": "南島原そうめん配布",
-			"body": "南島原産の島原手延べそうめんの配布と南島原市のPR",
-			"companyName": "日本Androidの会島原支部",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "3",
-			"title": "JSバックアップ新製品のご紹介",
-			"body": "ソフトバンク「Pepper」の新モデル「Pepper for Home」に「JSバックアップ for Pepper」を提供しましたのでご紹介致します。",
-			"companyName": "株式会社情報スペース",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "4",
-			"title": "ABC2019Sカンファレンスアプリの開発",
-			"body": "学生有志で今回のカンファレンスのアプリ開発を行いました。開発したアプリケーションの展示・配布を案内しています!",
-			"companyName": "日本Androidの会 学生部",
-			"companyIcon": "https://avatars0.githubusercontent.com/u/13821411?s=200&v=4"
-		},
-		{
-			"boothNum": "5",
-			"title": "DonkeyCar",
-			"body": "DeepLearningの推論で動く自動運転ラジコン、DonkeyCarの展示をおこないます。",
-			"companyName": "株式会社GClue",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "6",
-			"title": "健康経営優良法人の取組み紹介",
-			"body": "弊社が、これまで、健康的なエンジニアを育成するために実施してきた、様々な施策の中に社員の運動量を上げるために開催している「歩数ポイント対決」イベントがあります。\n今回は、その中で利用するチーム別歩数ランキングアプリについてご紹介致します。それ以外にも、アナログ、デジタル問わず、エンジニア育成のために弊社が実施している取り組み事例をご紹介致します。",
-			"companyName": "株式会社YAZ",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "7",
-			"title": "農業ITプラットフォーム「みどりクラウド」",
-			"body": "これまでスマートフォンやIoTを使って農業生産の支援を行なっていたみどりクラウドは、新たに農産物流通・販売を支援する事業の展開を始めています。また、野菜の生産だけではなく、養豚や養鶏などの領域にもみどりクラウドの応用分野は拡大してきました。\nみどりクラウドのこれからの取り組みのご紹介を通じ、Androidの新しい可能性をお伝えできればと思います。",
-			"companyName": "株式会社セラク",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "8",
-			"title": "よちよちAndroidの会",
-			"body": "趣味でスマートフォンアプリを開発している初心者のサークルです。各メンバーが作ったアプリを展示します。",
-			"companyName": "よちよちAndroidサンデープログラミングの会",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "9",
-			"title": "Codeの力で世界の未来を変えよう! ",
-			"body": "Codeの力で世界の未来を変えてみませんか！IBMがリードするCode and Responseでは、開発者が世界の様々な課題に貢献できることを信じています。昨年発表された自然災害へCodeの力で立ち向かうCall for Codeチャレンジもその取組の一つです。本展示では、Code and Response／Call for Codeについてご案内いたします。",
-			"companyName": "IBM",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "10",
-			"title": "IoT Display",
-			"body": "BLEビーコンを受信して、その内容を表示するボタン電池で稼働する超小型ディスプレイ",
-			"companyName": "adlib",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "11",
-			"title": "ADK勉強会(東京)",
-			"body": "ADK (Android Open Accessory Development Kit) の勉強会として、2011年に発足したユーザーグループです。\n現在は趣味の電子工作サークルのような活動をしています。メンバーの作成したガジェットなどを展示します。",
-			"companyName": "ADK勉強会(東京)",
-			"companyIcon": ""
-		},
-		{
-			"boothNum": "12",
-			"title": "D卒業研究の展示および研究室の紹介",
-			"body": "卒業生の作成したアプリなどを展示し，体験してもらう．アプリのよっては，アンケートにも答えてもらう．",
-			"companyName": "東海大学理学部情報数理学科",
-			"companyIcon": ""
-		}
-	]
+    "version": "3",
+    "data": [
+        {
+            "boothNum": "1",
+            "title": "IBM",
+            "body": "Codeの力で世界の未来を変えてみませんか！IBMがリードするCode and Responseでは、開発者が世界の様々な課題に貢献できることを信じています。昨年発表された自然災害へCodeの力で立ち向かうCall for Codeチャレンジもその取組の一つです。本展示では、Code and Response／Call for Codeについてご案内いたします。",
+            "companyName": "Codeの力で世界の未来を変えよう!",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "2",
+            "title": "adlib",
+            "body": "BLEビーコンを受信して、その内容を表示するボタン電池で稼働する超小型ディスプレイ",
+            "companyName": "IoT Display",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "3",
+            "title": "株式会社セラク",
+            "body": "これまでスマートフォンやIoTを使って農業生産の支援を行なっていたみどりクラウドは、新たに農産物流通・販売を支援する事業の展開を始めています。また、野菜の生産だけではなく、養豚や養鶏などの領域にもみどりクラウドの応用分野は拡大してきました。 みどりクラウドのこれからの取り組みのご紹介を通じ、Androidの新しい可能性をお伝えできればと思います。",
+            "companyName": "農業ITプラットフォーム「みどりクラウド」",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "4",
+            "title": "日本Androidの会",
+            "body": "パネル展示など",
+            "companyName": "日本Androidの会",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "5",
+            "title": "ADK勉強会(東京)",
+            "body": "ADK (Android Open Accessory Development Kit) の勉強会として、2011年に発足したユーザーグループです。 現在は趣味の電子工作サークルのような活動をしています。メンバーの作成したガジェットなどを展示します。",
+            "companyName": "ADK勉強会(東京)",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "6",
+            "title": "よちよちAndroidサンデープログラミングの会",
+            "body": "趣味でスマートフォンアプリを開発している初心者のサークルです。各メンバーが作ったアプリを展示します。",
+            "companyName": "よちよちAndroidの会",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "7",
+            "title": "株式会社情報スペース",
+            "body": "ソフトバンク「Pepper」の新モデル「Pepper for Home」に「JSバックアップ for Pepper」を提供しましたのでご紹介致します。",
+            "companyName": "JSバックアップ新製品のご紹介",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "8",
+            "title": "日本Qtユーザー会",
+            "body": "Androidでも使えるクロスプラットフォーム向けアプリケーションフレームワークQtとそのユーザー会のご紹介",
+            "companyName": "日本Qtユーザー会",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "9",
+            "title": "株式会社YAZ",
+            "body": "弊社が、これまで、健康的なエンジニアを育成するために実施してきた、様々な施策の中に社員の運動量を上げるために開催している「歩数ポイント対決」イベントがあります。 今回は、その中で利用するチーム別歩数ランキングアプリについてご紹介致します。 それ以外にも、アナログ、デジタル問わず、エンジニア育成のために弊社が実施している取り組み事例をご紹介致します。",
+            "companyName": "健康経営優良法人の取組み紹介",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "11",
+            "title": "日本Androidの会島原支部",
+            "body": "南島原産の島原手延べそうめんの配布と南島原市のPR",
+            "companyName": "南島原そうめん配布",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "12",
+            "title": "東海大学理学部情報数理学科",
+            "body": "卒業生の作成したアプリなどを展示し，体験してもらう．アプリのよっては，アンケートにも答えてもらう．",
+            "companyName": "卒業研究の展示および研究室の紹介",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "13",
+            "title": "日本Androidの会 浜松支部",
+            "body": "浜松支部で作成したアプリを展示します。",
+            "companyName": "浜松支部アプリ紹介",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "14",
+            "title": "日本Androidの会 学生部",
+            "body": "学生有志で今回のカンファレンスのアプリ開発を行いました。開発したアプリケーションの展示・配布を案内しています!",
+            "companyName": "ABC2019Sカンファレンスアプリの開発",
+            "companyIcon": "https://avatars0.githubusercontent.com/u/13821411?s=200&v=4"
+        },
+        {
+            "boothNum": "15",
+            "title": "株式会社GClue",
+            "body": "DeepLearningの推論で動く自動運転ラジコン、DonkeyCarの展示をおこないます。",
+            "companyName": "DonkeyCar",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "16",
+            "title": "日本Androidの会原子力部／秘密結社オープンフォース",
+            "body": "Bluetooth／BLE汎用ボードの「アオノドン」。フィールドセンサーネットワークとかウェアラブルデバイスが簡単に作れるぞ。 Bluetooth／BLEはAndroidで苦心惨憺だけれど、使えるサンプルプログラムなど用意して公開しているのでこれならうまくいくかも。 そのほか、オープンソースハードウェアを広げるイベントなども案内。",
+            "companyName": "アオノドンでBLEデバイスをつくる／他",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        },
+        {
+            "boothNum": "17",
+            "title": "日本Androidの会秋葉原支部ロボット部",
+            "body": "日本Androidの会秋葉原支部ロボット部は秋葉原近辺で毎月勉強会を行っています。メンバーの発表や研究をまとめた同人誌「ロー」を販売します。 また、日本各地及び海外各地で行っている掃除機Hackしてプログラムを教えるキッズ向け体験コーナー（無料）も実施します。参加希望者は当日ブースまでお越しください。",
+            "companyName": "ロボットの謎と不思議に挑戦する",
+            "companyIcon": "https://abc.android-group.jp/2018stest/wp-content/themes/abc2018s/img/droid2018.png"
+        }
+    ]
 }
