@@ -2,7 +2,7 @@
     "version": "3",
     "data": [
         {
-            "itemID": "0029",
+            "itemID": "0037",
             "title": "開会宣言",
             "body": "ABC2019 Springの開会宣言を行います。",
             "presenterNames": [
@@ -171,8 +171,8 @@
         },
         {
             "itemID": "0025",
-            "title": "Service WorkerではじめるオフラインWebアプリの実装 / Background Sync APIを使った実装について",
-            "body": "(前半)Service Workerを使ったオフラインアプリの基礎部分の実装をお話しします。App Shellやオフライン対応の話を中心に、PWAやService Workerの概要を掴める内容になっています。\n\n(後半)PWAが提供するオフライン・サポートの中で、Background Sync APIを使ったオフラインからオンラインに復帰した時の同期処理についてお話しします。",
+            "title": "これからはじめるPWA オフライン対応アプリでApp ShellとService Workerに触れる / Let’s try to use Background Sync API !",
+            "body": "(前半)Service Workerを使ったオフラインアプリの基礎部分についてお話しします。PWAやService Worker、App Shellなどに興味があり、まだ実装したことがない方向けの内容となっております。\n\n(後半)PWAのコンセプトの一つであるオフラインサポートのうち、\\\"\\\"Background Sync\\\"\\\"というバックグラウンドでデータを送受信する仕組みがあります。\n本セッションでは、Service worker上でBackground Sync APIをどのように利用するか、またどのようにオフラインサポートを実現するかをまとめた内容を実際のコードやWorkboxを使った実装を交えて解説します。",
             "presenterNames": [
                 {
                     "presenter": "堀正斉"
@@ -183,10 +183,10 @@
             ],
             "presenterIcons": [
                 {
-                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                    "iconUrl": "https://pbs.twimg.com/profile_images/557792281575444480/iqUnekhX_400x400.jpeg"
                 },
                 {
-                    "iconUrl": "https://abc.android-group.jp/2018s/wp-content/themes/abc2018s/img/droid2018.png"
+                    "iconUrl": "https://pbs.twimg.com/profile_images/953831050685198337/VV7Ki1gN_400x400.jpg"
                 }
             ],
             "belongs": [
@@ -305,7 +305,7 @@
         {
             "itemID": "0021",
             "title": "Google I/O 2019 アプリの裏側",
-            "body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
+            "body": "毎年、Google I/Oの現地参加者、リモート参加者向けに Android, iOS, Web プラットフォームでアプリを公開しています。その時の開発のベストプラクティスや、Google I/Oで発表される新機能を取り入れることが多いので後にソースコードを公開して開発者の方々に参照していただく役割も持っています。\n講演では、2019年の Android アプリのテックリードをした経験から Dark theme, AR機能、Room を使用した全文検索などの機能や、リージョンをまたがった開発チーム体制でうまく機能したところ、改善点などをお話したいと思います。",
             "presenterNames": [
                 {
                     "presenter": "萩倉健支"
@@ -821,22 +821,22 @@
             "tags": []
         },
         {
-            "itemID": "0014",
-            "title": "Flutter Recap from I/O 2019 + α",
-            "body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
+            "itemID": "0028",
+            "title": "Android Qのセキュリティ/プライバシー概要 & 日本Androidの会 学生部の紹介",
+            "body": "Google I/O 2019の参加報告です! Android Qのセキュリティ/プライバシー保護の新機能の概要やAPIの変更点を中心に発表された内容を報告します。\n後半は日本Androidの会 学生部の活動について紹介をします。\n",
             "presenterNames": [
                 {
-                    "presenter": "神原　健一"
+                    "presenter": "木村 隼人"
                 }
             ],
             "presenterIcons": [
                 {
-                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kanbara.jpg"
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kimura.jpg"
                 }
             ],
             "belongs": [
                 {
-                    "belong": "NTTテクノクロス株式会社/エバンジェリスト/テクニカルプロフェッショナル"
+                    "belong": "日本Androidの会 学生部/副部長"
                 }
             ],
             "slideUrls": [],
@@ -845,13 +845,13 @@
             "category": "Google I/Oトラック",
             "tags": [
                 {
-                    "tag": "Flutter"
+                    "tag": "Android Q"
                 },
                 {
-                    "tag": "iOS"
+                    "tag": "セキュリティ/プライバシー"
                 },
                 {
-                    "tag": "Android"
+                    "tag": "Google I/O"
                 }
             ]
         },
@@ -1066,22 +1066,22 @@
             "tags": []
         },
         {
-            "itemID": "0028",
-            "title": "Android Qのセキュリティ/プライバシー概要 & 日本Androidの会 学生部の紹介",
-            "body": "Google I/O 2019の参加報告です! Android Qのセキュリティ/プライバシー保護の新機能の概要やAPIの変更点を中心に発表された内容を報告します。\n後半は日本Androidの会 学生部の活動について紹介をします。\n",
+            "itemID": "0014",
+            "title": "Flutter Recap from I/O 2019 + α",
+            "body": "FlutterはAndroid/iOSのアプリを同時開発できるフレームワークとして、進化し続けています。Google I/O 2019では、「Flutter for Web」のテクニカルプレビューが発表されるなど、モバイルだけでなく、マルチプラットフォーム対応の環境へと進化を遂げようとしています。さらに、Flutterのバージョンは「1.5」となり、新機能に加え、安定性も増してきています。本セッションでは、Google I/O 2019で発表されたFlutter関連の最新トピックを中心に、Flutterの最近のトレンドについても触れる予定です。\n\nFlutterに既に取り組まれている方だけでなく、これからFlutterを始めようとする方にも魅力をお伝えできるようなセッションにしようと考えております。お気軽にご参加ください。",
             "presenterNames": [
                 {
-                    "presenter": "木村 隼人"
+                    "presenter": "神原　健一"
                 }
             ],
             "presenterIcons": [
                 {
-                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kimura.jpg"
+                    "iconUrl": "https://abc.android-group.jp/2019s/wp-content/uploads/sites/14/2019/05/kanbara.jpg"
                 }
             ],
             "belongs": [
                 {
-                    "belong": "日本Androidの会 学生部/副部長"
+                    "belong": "NTTテクノクロス株式会社/エバンジェリスト/テクニカルプロフェッショナル"
                 }
             ],
             "slideUrls": [],
@@ -1090,13 +1090,13 @@
             "category": "Google I/Oトラック",
             "tags": [
                 {
-                    "tag": "Android Q"
+                    "tag": "Flutter"
                 },
                 {
-                    "tag": "セキュリティ/プライバシー"
+                    "tag": "iOS"
                 },
                 {
-                    "tag": "Google I/O"
+                    "tag": "Android"
                 }
             ]
         },
